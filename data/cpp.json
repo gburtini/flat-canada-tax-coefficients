@@ -1,0 +1,632 @@
+[
+  {
+    "year": 2022,
+    "maximumAnnualPensionableEarnings": 64900,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 61400,
+    "employmentContributionRate": 0.057,
+    "maximumAnnualEmploymentContribution": 3499.8,
+    "maximumAnnualSelfEmploymentContribution": 6999.6
+  },
+  {
+    "year": 2021,
+    "maximumAnnualPensionableEarnings": 61600,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 58100,
+    "employmentContributionRate": 0.0545,
+    "maximumAnnualEmploymentContribution": 3166.45,
+    "maximumAnnualSelfEmploymentContribution": 6332.9
+  },
+  {
+    "year": 2020,
+    "maximumAnnualPensionableEarnings": 58700,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 55200,
+    "employmentContributionRate": 0.0525,
+    "maximumAnnualEmploymentContribution": 2898,
+    "maximumAnnualSelfEmploymentContribution": 5796
+  },
+  {
+    "year": 2019,
+    "maximumAnnualPensionableEarnings": 57400,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 53900,
+    "employmentContributionRate": 0.051,
+    "maximumAnnualEmploymentContribution": 2748.9,
+    "maximumAnnualSelfEmploymentContribution": 5497.8
+  },
+  {
+    "year": 2018,
+    "maximumAnnualPensionableEarnings": 55900,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 52400,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2593.8,
+    "maximumAnnualSelfEmploymentContribution": 5187.6
+  },
+  {
+    "year": 2017,
+    "maximumAnnualPensionableEarnings": 55300,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 51800,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2564.1,
+    "maximumAnnualSelfEmploymentContribution": 5128.2
+  },
+  {
+    "year": 2016,
+    "maximumAnnualPensionableEarnings": 54900,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 51400,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2544.3,
+    "maximumAnnualSelfEmploymentContribution": 5088.6
+  },
+  {
+    "year": 2015,
+    "maximumAnnualPensionableEarnings": 53600,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 50100,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2479.95,
+    "maximumAnnualSelfEmploymentContribution": 4959.9
+  },
+  {
+    "year": 2014,
+    "maximumAnnualPensionableEarnings": 52500,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 49000,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2425.5,
+    "maximumAnnualSelfEmploymentContribution": 4851
+  },
+  {
+    "year": 2013,
+    "maximumAnnualPensionableEarnings": 51100,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 47600,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2356.2,
+    "maximumAnnualSelfEmploymentContribution": 4712.4
+  },
+  {
+    "year": 2012,
+    "maximumAnnualPensionableEarnings": 50100,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 46600,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2306.7,
+    "maximumAnnualSelfEmploymentContribution": 4613.4
+  },
+  {
+    "year": 2011,
+    "maximumAnnualPensionableEarnings": 48300,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 44800,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2217.6,
+    "maximumAnnualSelfEmploymentContribution": 4435.2
+  },
+  {
+    "year": 2010,
+    "maximumAnnualPensionableEarnings": 47200,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 43700,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2163.15,
+    "maximumAnnualSelfEmploymentContribution": 4326.3
+  },
+  {
+    "year": 2022,
+    "maximumAnnualPensionableEarnings": 64900,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 61400,
+    "employmentContributionRate": 0.057,
+    "maximumAnnualEmploymentContribution": 3499.8,
+    "maximumAnnualSelfEmploymentContribution": 6999.6
+  },
+  {
+    "year": 2021,
+    "maximumAnnualPensionableEarnings": 61600,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 58100,
+    "employmentContributionRate": 0.0545,
+    "maximumAnnualEmploymentContribution": 3166.45,
+    "maximumAnnualSelfEmploymentContribution": 6332.9
+  },
+  {
+    "year": 2020,
+    "maximumAnnualPensionableEarnings": 58700,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 55200,
+    "employmentContributionRate": 0.0525,
+    "maximumAnnualEmploymentContribution": 2898,
+    "maximumAnnualSelfEmploymentContribution": 5796
+  },
+  {
+    "year": 2019,
+    "maximumAnnualPensionableEarnings": 57400,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 53900,
+    "employmentContributionRate": 0.051,
+    "maximumAnnualEmploymentContribution": 2748.9,
+    "maximumAnnualSelfEmploymentContribution": 5497.8
+  },
+  {
+    "year": 2018,
+    "maximumAnnualPensionableEarnings": 55900,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 52400,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2593.8,
+    "maximumAnnualSelfEmploymentContribution": 5187.6
+  },
+  {
+    "year": 2017,
+    "maximumAnnualPensionableEarnings": 55300,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 51800,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2564.1,
+    "maximumAnnualSelfEmploymentContribution": 5128.2
+  },
+  {
+    "year": 2016,
+    "maximumAnnualPensionableEarnings": 54900,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 51400,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2544.3,
+    "maximumAnnualSelfEmploymentContribution": 5088.6
+  },
+  {
+    "year": 2015,
+    "maximumAnnualPensionableEarnings": 53600,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 50100,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2479.95,
+    "maximumAnnualSelfEmploymentContribution": 4959.9
+  },
+  {
+    "year": 2014,
+    "maximumAnnualPensionableEarnings": 52500,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 49000,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2425.5,
+    "maximumAnnualSelfEmploymentContribution": 4851
+  },
+  {
+    "year": 2013,
+    "maximumAnnualPensionableEarnings": 51100,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 47600,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2356.2,
+    "maximumAnnualSelfEmploymentContribution": 4712.4
+  },
+  {
+    "year": 2012,
+    "maximumAnnualPensionableEarnings": 50100,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 46600,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2306.7,
+    "maximumAnnualSelfEmploymentContribution": 4613.4
+  },
+  {
+    "year": 2011,
+    "maximumAnnualPensionableEarnings": 48300,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 44800,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2217.6,
+    "maximumAnnualSelfEmploymentContribution": 4435.2
+  },
+  {
+    "year": 2010,
+    "maximumAnnualPensionableEarnings": 47200,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 43700,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2163.15,
+    "maximumAnnualSelfEmploymentContribution": 4326.3
+  },
+  {
+    "year": 2009,
+    "maximumAnnualPensionableEarnings": 46300,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 42800,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2118.6,
+    "maximumAnnualSelfEmploymentContribution": 4237.2
+  },
+  {
+    "year": 2008,
+    "maximumAnnualPensionableEarnings": 44900,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 41400,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 2049.3,
+    "maximumAnnualSelfEmploymentContribution": 4098.6
+  },
+  {
+    "year": 2007,
+    "maximumAnnualPensionableEarnings": 43700,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 40200,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 1989.9,
+    "maximumAnnualSelfEmploymentContribution": 3979.8
+  },
+  {
+    "year": 2006,
+    "maximumAnnualPensionableEarnings": 42100,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 38600,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 1910.7,
+    "maximumAnnualSelfEmploymentContribution": 3821.4
+  },
+  {
+    "year": 2005,
+    "maximumAnnualPensionableEarnings": 41100,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 37600,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 1861.2,
+    "maximumAnnualSelfEmploymentContribution": 3722.4
+  },
+  {
+    "year": 2004,
+    "maximumAnnualPensionableEarnings": 40500,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 37000,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 1831.5,
+    "maximumAnnualSelfEmploymentContribution": 3663
+  },
+  {
+    "year": 2003,
+    "maximumAnnualPensionableEarnings": 39900,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 36400,
+    "employmentContributionRate": 0.0495,
+    "maximumAnnualEmploymentContribution": 1801.8,
+    "maximumAnnualSelfEmploymentContribution": 3603.6
+  },
+  {
+    "year": 2002,
+    "maximumAnnualPensionableEarnings": 39100,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 35600,
+    "employmentContributionRate": 0.047,
+    "maximumAnnualEmploymentContribution": 1673.2,
+    "maximumAnnualSelfEmploymentContribution": 3346.4
+  },
+  {
+    "year": 2001,
+    "maximumAnnualPensionableEarnings": 38300,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 34800,
+    "employmentContributionRate": 0.043,
+    "maximumAnnualEmploymentContribution": 1496.4,
+    "maximumAnnualSelfEmploymentContribution": 2992.8
+  },
+  {
+    "year": 2000,
+    "maximumAnnualPensionableEarnings": 37600,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 34100,
+    "employmentContributionRate": 0.039,
+    "maximumAnnualEmploymentContribution": 1329.9,
+    "maximumAnnualSelfEmploymentContribution": 2659.8
+  },
+  {
+    "year": 1999,
+    "maximumAnnualPensionableEarnings": 37400,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 33900,
+    "employmentContributionRate": 0.035,
+    "maximumAnnualEmploymentContribution": 1186.5,
+    "maximumAnnualSelfEmploymentContribution": 2373
+  },
+  {
+    "year": 1998,
+    "maximumAnnualPensionableEarnings": 36900,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 33400,
+    "employmentContributionRate": 0.032,
+    "maximumAnnualEmploymentContribution": 1068.8,
+    "maximumAnnualSelfEmploymentContribution": 2137.6
+  },
+  {
+    "year": 1997,
+    "maximumAnnualPensionableEarnings": 35800,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 32300,
+    "employmentContributionRate": 0.029249999999999998,
+    "maximumAnnualEmploymentContribution": 944.78,
+    "maximumAnnualSelfEmploymentContribution": 1889.55
+  },
+  {
+    "year": 1996,
+    "maximumAnnualPensionableEarnings": 35400,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 31900,
+    "employmentContributionRate": 0.027999999999999997,
+    "maximumAnnualEmploymentContribution": 893.2,
+    "maximumAnnualSelfEmploymentContribution": 1786.4
+  },
+  {
+    "year": 1995,
+    "maximumAnnualPensionableEarnings": 34900,
+    "basicExemptionAmount": 3400,
+    "maximumContributoryEarnings": 31500,
+    "employmentContributionRate": 0.027000000000000003,
+    "maximumAnnualEmploymentContribution": 850.5,
+    "maximumAnnualSelfEmploymentContribution": 1701
+  },
+  {
+    "year": 1994,
+    "maximumAnnualPensionableEarnings": 34400,
+    "basicExemptionAmount": 3400,
+    "maximumContributoryEarnings": 31000,
+    "employmentContributionRate": 0.026000000000000002,
+    "maximumAnnualEmploymentContribution": 806,
+    "maximumAnnualSelfEmploymentContribution": 1612
+  },
+  {
+    "year": 1993,
+    "maximumAnnualPensionableEarnings": 33400,
+    "basicExemptionAmount": 3300,
+    "maximumContributoryEarnings": 30100,
+    "employmentContributionRate": 0.025,
+    "maximumAnnualEmploymentContribution": 752.5,
+    "maximumAnnualSelfEmploymentContribution": 1505
+  },
+  {
+    "year": 1992,
+    "maximumAnnualPensionableEarnings": 32200,
+    "basicExemptionAmount": 3200,
+    "maximumContributoryEarnings": 29000,
+    "employmentContributionRate": 0.024,
+    "maximumAnnualEmploymentContribution": 696,
+    "maximumAnnualSelfEmploymentContribution": 1392
+  },
+  {
+    "year": 1991,
+    "maximumAnnualPensionableEarnings": 30500,
+    "basicExemptionAmount": 3000,
+    "maximumContributoryEarnings": 27500,
+    "employmentContributionRate": 0.023,
+    "maximumAnnualEmploymentContribution": 632.5,
+    "maximumAnnualSelfEmploymentContribution": 1265
+  },
+  {
+    "year": 1990,
+    "maximumAnnualPensionableEarnings": 28900,
+    "basicExemptionAmount": 2800,
+    "maximumContributoryEarnings": 26100,
+    "employmentContributionRate": 0.022000000000000002,
+    "maximumAnnualEmploymentContribution": 574.2,
+    "maximumAnnualSelfEmploymentContribution": 1148.4
+  },
+  {
+    "year": 1989,
+    "maximumAnnualPensionableEarnings": 27700,
+    "basicExemptionAmount": 2700,
+    "maximumContributoryEarnings": 25000,
+    "employmentContributionRate": 0.021,
+    "maximumAnnualEmploymentContribution": 525,
+    "maximumAnnualSelfEmploymentContribution": 1050
+  },
+  {
+    "year": 1988,
+    "maximumAnnualPensionableEarnings": 26500,
+    "basicExemptionAmount": 2600,
+    "maximumContributoryEarnings": 23900,
+    "employmentContributionRate": 0.02,
+    "maximumAnnualEmploymentContribution": 478,
+    "maximumAnnualSelfEmploymentContribution": 956
+  },
+  {
+    "year": 1987,
+    "maximumAnnualPensionableEarnings": 25900,
+    "basicExemptionAmount": 2500,
+    "maximumContributoryEarnings": 23400,
+    "employmentContributionRate": 0.019,
+    "maximumAnnualEmploymentContribution": 444.6,
+    "maximumAnnualSelfEmploymentContribution": 889.2
+  },
+  {
+    "year": 1986,
+    "maximumAnnualPensionableEarnings": 25800,
+    "basicExemptionAmount": 2500,
+    "maximumContributoryEarnings": 23300,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 419.4,
+    "maximumAnnualSelfEmploymentContribution": 838.8
+  },
+  {
+    "year": 1985,
+    "maximumAnnualPensionableEarnings": 23400,
+    "basicExemptionAmount": 2300,
+    "maximumContributoryEarnings": 21100,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 379.8,
+    "maximumAnnualSelfEmploymentContribution": 759.6
+  },
+  {
+    "year": 1984,
+    "maximumAnnualPensionableEarnings": 20800,
+    "basicExemptionAmount": 2000,
+    "maximumContributoryEarnings": 18800,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 338.4,
+    "maximumAnnualSelfEmploymentContribution": 676.8
+  },
+  {
+    "year": 1983,
+    "maximumAnnualPensionableEarnings": 18500,
+    "basicExemptionAmount": 1800,
+    "maximumContributoryEarnings": 16700,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 300.6,
+    "maximumAnnualSelfEmploymentContribution": 601.2
+  },
+  {
+    "year": 1982,
+    "maximumAnnualPensionableEarnings": 16500,
+    "basicExemptionAmount": 1600,
+    "maximumContributoryEarnings": 14900,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 268.2,
+    "maximumAnnualSelfEmploymentContribution": 536.4
+  },
+  {
+    "year": 1981,
+    "maximumAnnualPensionableEarnings": 14700,
+    "basicExemptionAmount": 1400,
+    "maximumContributoryEarnings": 13300,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 239.4,
+    "maximumAnnualSelfEmploymentContribution": 478.8
+  },
+  {
+    "year": 1980,
+    "maximumAnnualPensionableEarnings": 13100,
+    "basicExemptionAmount": 1300,
+    "maximumContributoryEarnings": 11800,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 212.1,
+    "maximumAnnualSelfEmploymentContribution": 424.8
+  },
+  {
+    "year": 1979,
+    "maximumAnnualPensionableEarnings": 11700,
+    "basicExemptionAmount": 1100,
+    "maximumContributoryEarnings": 10600,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 190.8,
+    "maximumAnnualSelfEmploymentContribution": 381.6
+  },
+  {
+    "year": 1978,
+    "maximumAnnualPensionableEarnings": 10400,
+    "basicExemptionAmount": 1000,
+    "maximumContributoryEarnings": 9400,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 169.2,
+    "maximumAnnualSelfEmploymentContribution": 338.4
+  },
+  {
+    "year": 1977,
+    "maximumAnnualPensionableEarnings": 9300,
+    "basicExemptionAmount": 900,
+    "maximumContributoryEarnings": 8400,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 151.2,
+    "maximumAnnualSelfEmploymentContribution": 302.4
+  },
+  {
+    "year": 1976,
+    "maximumAnnualPensionableEarnings": 8300,
+    "basicExemptionAmount": 800,
+    "maximumContributoryEarnings": 7500,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 135,
+    "maximumAnnualSelfEmploymentContribution": 270
+  },
+  {
+    "year": 1975,
+    "maximumAnnualPensionableEarnings": 7400,
+    "basicExemptionAmount": 700,
+    "maximumContributoryEarnings": 6700,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 120.6,
+    "maximumAnnualSelfEmploymentContribution": 241.2
+  },
+  {
+    "year": 1974,
+    "maximumAnnualPensionableEarnings": 6600,
+    "basicExemptionAmount": 700,
+    "maximumContributoryEarnings": 5900,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 106.2,
+    "maximumAnnualSelfEmploymentContribution": 212.4
+  },
+  {
+    "year": 1973,
+    "maximumAnnualPensionableEarnings": 5600,
+    "basicExemptionAmount": 600,
+    "maximumContributoryEarnings": 5000,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 90,
+    "maximumAnnualSelfEmploymentContribution": 180
+  },
+  {
+    "year": 1972,
+    "maximumAnnualPensionableEarnings": 5500,
+    "basicExemptionAmount": 600,
+    "maximumContributoryEarnings": 4900,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 88.2,
+    "maximumAnnualSelfEmploymentContribution": 176.4
+  },
+  {
+    "year": 1971,
+    "maximumAnnualPensionableEarnings": 5400,
+    "basicExemptionAmount": 600,
+    "maximumContributoryEarnings": 4800,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 86.4,
+    "maximumAnnualSelfEmploymentContribution": 172.8
+  },
+  {
+    "year": 1970,
+    "maximumAnnualPensionableEarnings": 5300,
+    "basicExemptionAmount": 600,
+    "maximumContributoryEarnings": 4700,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 84.6,
+    "maximumAnnualSelfEmploymentContribution": 169.2
+  },
+  {
+    "year": 1969,
+    "maximumAnnualPensionableEarnings": 5200,
+    "basicExemptionAmount": 600,
+    "maximumContributoryEarnings": 4600,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 82.8,
+    "maximumAnnualSelfEmploymentContribution": 165.6
+  },
+  {
+    "year": 1968,
+    "maximumAnnualPensionableEarnings": 5100,
+    "basicExemptionAmount": 600,
+    "maximumContributoryEarnings": 4500,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 81,
+    "maximumAnnualSelfEmploymentContribution": 162
+  },
+  {
+    "year": 1967,
+    "maximumAnnualPensionableEarnings": 5000,
+    "basicExemptionAmount": 600,
+    "maximumContributoryEarnings": 4400,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 79.2,
+    "maximumAnnualSelfEmploymentContribution": 158.4
+  },
+  {
+    "year": 1966,
+    "maximumAnnualPensionableEarnings": 5000,
+    "basicExemptionAmount": 600,
+    "maximumContributoryEarnings": 4400,
+    "employmentContributionRate": 0.018000000000000002,
+    "maximumAnnualEmploymentContribution": 79.2,
+    "maximumAnnualSelfEmploymentContribution": 158.4
+  }
+]
