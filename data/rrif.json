@@ -1,0 +1,152 @@
+[
+  {
+    "age": 71,
+    "preMarch1986Factor": 0.0526,
+    "qualifyingFactor": 0.0526,
+    "allOtherFactor": 0.0528
+  },
+  {
+    "age": 72,
+    "preMarch1986Factor": 0.0556,
+    "qualifyingFactor": 0.054,
+    "allOtherFactor": 0.054
+  },
+  {
+    "age": 73,
+    "preMarch1986Factor": 0.0588,
+    "qualifyingFactor": 0.0553,
+    "allOtherFactor": 0.0553
+  },
+  {
+    "age": 74,
+    "preMarch1986Factor": 0.0625,
+    "qualifyingFactor": 0.0567,
+    "allOtherFactor": 0.0567
+  },
+  {
+    "age": 75,
+    "preMarch1986Factor": 0.0667,
+    "qualifyingFactor": 0.0582,
+    "allOtherFactor": 0.0582
+  },
+  {
+    "age": 76,
+    "preMarch1986Factor": 0.0714,
+    "qualifyingFactor": 0.0598,
+    "allOtherFactor": 0.0598
+  },
+  {
+    "age": 77,
+    "preMarch1986Factor": 0.0769,
+    "qualifyingFactor": 0.0617,
+    "allOtherFactor": 0.0617
+  },
+  {
+    "age": 78,
+    "preMarch1986Factor": 0.0833,
+    "qualifyingFactor": 0.0636,
+    "allOtherFactor": 0.0636
+  },
+  {
+    "age": 79,
+    "preMarch1986Factor": 0.0909,
+    "qualifyingFactor": 0.0658,
+    "allOtherFactor": 0.0658
+  },
+  {
+    "age": 80,
+    "preMarch1986Factor": 0.1,
+    "qualifyingFactor": 0.0682,
+    "allOtherFactor": 0.0682
+  },
+  {
+    "age": 81,
+    "preMarch1986Factor": 0.1111,
+    "qualifyingFactor": 0.0708,
+    "allOtherFactor": 0.0708
+  },
+  {
+    "age": 82,
+    "preMarch1986Factor": 0.125,
+    "qualifyingFactor": 0.0738,
+    "allOtherFactor": 0.0738
+  },
+  {
+    "age": 83,
+    "preMarch1986Factor": 0.1429,
+    "qualifyingFactor": 0.0771,
+    "allOtherFactor": 0.0771
+  },
+  {
+    "age": 84,
+    "preMarch1986Factor": 0.1667,
+    "qualifyingFactor": 0.0808,
+    "allOtherFactor": 0.0808
+  },
+  {
+    "age": 85,
+    "preMarch1986Factor": 0.2,
+    "qualifyingFactor": 0.0851,
+    "allOtherFactor": 0.0851
+  },
+  {
+    "age": 86,
+    "preMarch1986Factor": 0.25,
+    "qualifyingFactor": 0.0899,
+    "allOtherFactor": 0.0899
+  },
+  {
+    "age": 87,
+    "preMarch1986Factor": 0.3333,
+    "qualifyingFactor": 0.0955,
+    "allOtherFactor": 0.0955
+  },
+  {
+    "age": 88,
+    "preMarch1986Factor": 0.5,
+    "qualifyingFactor": 0.1021,
+    "allOtherFactor": 0.1021
+  },
+  {
+    "age": 89,
+    "preMarch1986Factor": 1,
+    "qualifyingFactor": 0.1099,
+    "allOtherFactor": 0.1099
+  },
+  {
+    "age": 90,
+    "preMarch1986Factor": 0,
+    "qualifyingFactor": 0.1192,
+    "allOtherFactor": 0.1192
+  },
+  {
+    "age": 91,
+    "preMarch1986Factor": 0,
+    "qualifyingFactor": 0.1306,
+    "allOtherFactor": 0.1306
+  },
+  {
+    "age": 92,
+    "preMarch1986Factor": 0,
+    "qualifyingFactor": 0.1449,
+    "allOtherFactor": 0.1449
+  },
+  {
+    "age": 93,
+    "preMarch1986Factor": 0,
+    "qualifyingFactor": 0.1634,
+    "allOtherFactor": 0.1634
+  },
+  {
+    "age": 94,
+    "preMarch1986Factor": 0,
+    "qualifyingFactor": 0.1879,
+    "allOtherFactor": 0.1879
+  },
+  {
+    "age": 95,
+    "preMarch1986Factor": 0,
+    "qualifyingFactor": 0.2,
+    "allOtherFactor": 0.2
+  }
+]
