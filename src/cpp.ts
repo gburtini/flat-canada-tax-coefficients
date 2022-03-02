@@ -78,7 +78,7 @@ try {
                 values.length +
                 " values, but have " +
                 keys.length +
-                "keys to fill."
+                " keys to fill."
             );
           }
 
@@ -102,21 +102,27 @@ try {
       Object.entries(row).map(([k, v]) => {
         // rename all fields per the FIELD_MAP
         const newKey = FIELD_MAP[k] ?? k;
+        let newValue = v;
 
-        if (typeof v === "string") {
+        // TODO: because of the floating point error introduced here, we could imagine
+        // an end user preferring the raw string values. Return these as well.
+
+        if (typeof newValue === "string") {
           // convert numbers to numeric types.
           // strip dollar signs, commas
           // NOTE: stripping % here probably indicates a bug unless we have handled
           // the percentage in the convert percentages rules below this.
-          v = parseFloat(v.replace(/[$,%]/g, "").replace(/\s+/g, " ").trim());
+          newValue = parseFloat(
+            newValue.replace(/[$,%]/g, "").replace(/\s+/g, " ").trim()
+          );
 
           // convert percentages to their raw values
           if (newKey in FIELD_MULTIPLIERS) {
-            v = v * FIELD_MULTIPLIERS[newKey];
+            newValue = newValue * FIELD_MULTIPLIERS[newKey];
           }
         }
 
-        return [newKey, v];
+        return [newKey, newValue];
       })
     );
   });

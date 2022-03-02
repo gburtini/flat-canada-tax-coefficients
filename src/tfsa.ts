@@ -67,7 +67,7 @@ try {
   console.log("Successfully processed data into ", data.length, "rows.");
 
   await writeJSON("./data/" + outputFilename, data, null, 2);
-  //await removeFile(inputFileName);
+  await removeFile(inputFileName);
 } catch (error) {
   console.log(error);
 }

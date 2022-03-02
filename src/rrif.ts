@@ -121,7 +121,7 @@ try {
   });
 
   await writeJSON("./data/" + outputFilename, data, null, 2);
-  //await removeFile(inputFileName);
+  await removeFile(inputFileName);
 } catch (error) {
   console.log(error);
 }

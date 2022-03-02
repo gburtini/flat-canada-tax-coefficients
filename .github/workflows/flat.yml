@@ -6,7 +6,7 @@ on:
   push:
     paths:
       - .github/workflows/flat.yml
-      - ./src/cpp.ts
+      - ./src/
 jobs:
   scheduled:
     runs-on: ubuntu-latest
@@ -17,9 +17,27 @@ jobs:
           deno-version: v1.10.x
       - name: Check out repo
         uses: actions/checkout@v2
-      - name: Fetch data
+      - name: Fetch data (CPP contribution rates, maximums and exemptions)
         uses: githubocto/flat@v3
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html
           downloaded_filename: cpp.html
           postprocess: ./src/cpp.ts
+      - name: Fetch data (MP, DB, RRSP, DPSP, ALDA)
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+          downloaded_filename: pensions.html
+          postprocess: ./src/pensions.ts
+      - name: Fetch data (TFSA limits)
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+          downloaded_filename: tfsa.html
+          postprocess: ./src/tfsa.ts
+      - name: Fetch data (RRIF factors)
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/t4rsp-t4rif-information-returns/payments/chart-prescribed-factors.html
+          downloaded_filename: rrif.html
+          postprocess: ./src/rrif.ts
