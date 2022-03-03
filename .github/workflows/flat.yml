@@ -22,22 +22,22 @@ jobs:
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html
           downloaded_filename: cpp.html
-          postprocess: ./src/cpp.ts
+          postprocess: ./src/processors/cpp.ts
       - name: Fetch data (MP, DB, RRSP, DPSP, ALDA)
         uses: githubocto/flat@v3
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
           downloaded_filename: pensions.html
-          postprocess: ./src/pensions.ts
+          postprocess: ./src/processors/pensions.ts
       - name: Fetch data (TFSA limits)
         uses: githubocto/flat@v3
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
           downloaded_filename: tfsa.html
-          postprocess: ./src/tfsa.ts
+          postprocess: ./src/processors/tfsa.ts
       - name: Fetch data (RRIF factors)
         uses: githubocto/flat@v3
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/t4rsp-t4rif-information-returns/payments/chart-prescribed-factors.html
           downloaded_filename: rrif.html
-          postprocess: ./src/rrif.ts
+          postprocess: ./src/processors/rrif.ts

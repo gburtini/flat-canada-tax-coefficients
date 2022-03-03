@@ -4,6 +4,7 @@ import {
   removeFile,
 } from "https://deno.land/x/flat@0.0.14/mod.ts";
 import { cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
+import { cleanNumber } from "./../helpers/cleaners.ts";
 
 const FIELD_MAP: { [key: string]: string } = {
   Year: "year",
@@ -17,7 +18,7 @@ const FIELD_MAP: { [key: string]: string } = {
     "maximumAnnualSelfEmploymentContribution",
 };
 const FIELD_MULTIPLIERS: { [key: string]: number } = {
-  employmentContributionRate: 1 / 100,
+  employmentContributionRate: 1 / 100, // no % sign present in the dataset.
 };
 
 const outputFilename = Deno.args[0].split(".")[0] + ".json";
@@ -110,11 +111,7 @@ try {
         if (typeof newValue === "string") {
           // convert numbers to numeric types.
           // strip dollar signs, commas
-          // NOTE: stripping % here probably indicates a bug unless we have handled
-          // the percentage in the convert percentages rules below this.
-          newValue = parseFloat(
-            newValue.replace(/[$,%]/g, "").replace(/\s+/g, " ").trim()
-          );
+          newValue = cleanNumber(newValue);
 
           // convert percentages to their raw values
           if (newKey in FIELD_MULTIPLIERS) {

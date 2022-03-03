@@ -4,6 +4,7 @@ import {
   removeFile,
 } from "https://deno.land/x/flat@0.0.14/mod.ts";
 import { cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
+import { cleanHeader } from "../helpers/cleaners.ts";
 
 const FIELD_MAP: { [key: string]: string } = {
   "Age of the RRIF annuitant or spouse or common-law partner": "age",
@@ -40,17 +41,7 @@ try {
       if (j === 0) {
         keys = $(row)
           .find("th")
-          .map((_, header) =>
-            $(header) // gross mess to remove the <sup> tags. TODO: reconsider this and then abstract something clean for reuse in every scraper.
-              .clone()
-              .children("sup")
-              .remove()
-              .end()
-              .text()
-              .replace(/\s+/g, " ")
-              .replace(/\n/, " ")
-              .trim()
-          )
+          .map((_, header) => cleanHeader($(header), "sup"))
           .get();
 
         // skip the known non-data row.
