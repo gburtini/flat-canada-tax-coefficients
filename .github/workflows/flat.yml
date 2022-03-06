@@ -6,7 +6,10 @@ on:
   push:
     paths:
       - .github/workflows/flat.yml
-      - ./src/
+      - ./src/processors/cpp.ts
+      - ./src/processors/pensions.ts
+      - ./src/processors/tfsa.ts
+      - ./src/processors/rrif.ts
 jobs:
   scheduled:
     runs-on: ubuntu-latest

@@ -23,6 +23,7 @@ export function cleanCell(cell: Cheerio) {
   return cell.text().replace(/\s+/g, " ").trim();
 }
 
+// TODO: this function does entirely too much stuff. It should be broken up into three functions.
 export function cleanRawData(
   rawData: { [key: string]: string }[],
   fieldMap: { [key: string]: string } = {},
