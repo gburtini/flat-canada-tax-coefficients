@@ -1,0 +1,609 @@
+[
+  {
+    "name": "federal",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 50197]],
+      "rate": 0.15
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        ["<+", 50195],
+        [">", 50197],
+        ["<=", 100392]
+      ],
+      "rate": 0.20500000000000002
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        ["<+", 55233],
+        [">", 100392],
+        ["<=", 155625]
+      ],
+      "rate": 0.26
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        ["<+", 66083],
+        [">", 155625],
+        ["<=", 221708]
+      ],
+      "rate": 0.29
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 221708]],
+      "rate": 0.33
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 39147]],
+      "rate": 0.087
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 39147],
+        ["<=", 78294]
+      ],
+      "rate": 0.145
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 78294],
+        ["<=", 139780]
+      ],
+      "rate": 0.158
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 139780],
+        ["<=", 195693]
+      ],
+      "rate": 0.17800000000000002
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 195693],
+        ["<=", 250000]
+      ],
+      "rate": 0.198
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 250000],
+        ["<=", 500000]
+      ],
+      "rate": 0.20800000000000002
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 500000],
+        ["<=", 1000000]
+      ],
+      "rate": 0.21300000000000002
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 1000000]],
+      "rate": 0.218
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 31984]],
+      "rate": 0.098
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 31984],
+        ["<=", 63969]
+      ],
+      "rate": 0.138
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 63969]],
+      "rate": 0.167
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 29590]],
+      "rate": 0.08789999999999999
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 29590],
+        ["<=", 59180]
+      ],
+      "rate": 0.1495
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 59180],
+        ["<=", 93000]
+      ],
+      "rate": 0.16670000000000001
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 93000],
+        ["<=", 150000]
+      ],
+      "rate": 0.17500000000000002
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 150000]],
+      "rate": 0.21
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 44887]],
+      "rate": 0.094
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 44887],
+        ["<=", 89775]
+      ],
+      "rate": 0.1482
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 89775],
+        ["<=", 145955]
+      ],
+      "rate": 0.16519999999999999
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 145955],
+        ["<=", 166280]
+      ],
+      "rate": 0.1784
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 166280]],
+      "rate": 0.203
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 46226]],
+      "rate": 0.050499999999999996
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 46226],
+        ["<=", 92454]
+      ],
+      "rate": 0.09150000000000001
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 92454],
+        ["<=", 150000]
+      ],
+      "rate": 0.1116
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 150000],
+        ["<=", 220000]
+      ],
+      "rate": 0.1216
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 220000]],
+      "rate": 0.1316
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 34431]],
+      "rate": 0.10800000000000001
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 34431],
+        ["<=", 74416]
+      ],
+      "rate": 0.1275
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 74416]],
+      "rate": 0.174
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 46773]],
+      "rate": 0.105
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 46773],
+        ["<=", 133638]
+      ],
+      "rate": 0.125
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 133638]],
+      "rate": 0.145
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 131220]],
+      "rate": 0.1
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 131220],
+        ["<=", 157464]
+      ],
+      "rate": 0.12
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 157464],
+        ["<=", 209952]
+      ],
+      "rate": 0.13
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 209952],
+        ["<=", 314928]
+      ],
+      "rate": 0.14
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 314928]],
+      "rate": 0.15
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 43070]],
+      "rate": 0.0506
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 43070],
+        ["<=", 86141]
+      ],
+      "rate": 0.077
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 86141],
+        ["<=", 98901]
+      ],
+      "rate": 0.105
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 98901],
+        ["<=", 120094]
+      ],
+      "rate": 0.1229
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 120094],
+        ["<=", 162832]
+      ],
+      "rate": 0.147
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 162832],
+        ["<=", 227091]
+      ],
+      "rate": 0.168
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 227091]],
+      "rate": 0.20500000000000002
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 50197]],
+      "rate": 0.064
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 50197],
+        ["<=", 100392]
+      ],
+      "rate": 0.09
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 100392],
+        ["<=", 155625]
+      ],
+      "rate": 0.109
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 155625],
+        ["<=", 500000]
+      ],
+      "rate": 0.128
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 500000]],
+      "rate": 0.15
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 45462]],
+      "rate": 0.059000000000000004
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 45462],
+        ["<=", 90927]
+      ],
+      "rate": 0.086
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 90927],
+        ["<=", 147826]
+      ],
+      "rate": 0.122
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 147826]],
+      "rate": 0.1405
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2022,
+    "rate": {
+      "rules": [["<=", 47862]],
+      "rate": 0.04
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 47862],
+        ["<=", 95724]
+      ],
+      "rate": 0.07
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2022,
+    "rate": {
+      "rules": [
+        [">", 95724],
+        ["<=", 155625]
+      ],
+      "rate": 0.09
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2022,
+    "rate": {
+      "rules": [[">", 155625]],
+      "rate": 0.115
+    }
+  }
+]
