@@ -75,6 +75,6 @@ await runner(
   },
   null,
   {
-    removeFile: false,
+    removeFile: true,
   }
 );

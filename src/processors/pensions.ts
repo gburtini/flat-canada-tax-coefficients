@@ -19,6 +19,6 @@ await runner(
   defaultProcessor(selector),
   defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS),
   {
-    removeFile: false,
+    removeFile: true,
   }
 );

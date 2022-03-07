@@ -35,6 +35,6 @@ await runner(
   },
   defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS),
   {
-    removeFile: false,
+    removeFile: true,
   }
 );
