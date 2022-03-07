@@ -8,12 +8,11 @@ import { cheerio, Cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
 import { cleanHeader, cleanCell, cleanRawData } from "./cleaners.ts";
 import { ensureExtend } from "./combiners.ts";
 
-export async function runner(
+// T is usually {[key:string]: string}
+export async function runner<T>(
   dataFile: string,
-  processor: (html: string) => Promise<{ [key: string]: string }[]>, // TODO: processor would be clearer as "extractor"; processors are the whole end-to-end execution.
-  cleaner:
-    | ((data: { [key: string]: string }[]) => Promise<{ [key: string]: any }[]>)
-    | null,
+  processor: (html: string) => Promise<T[]>, // TODO: processor would be clearer as "extractor"; processors are the whole end-to-end execution.
+  cleaner: ((data: T[]) => Promise<any[]>) | null,
   options = {
     removeFile: false,
   }

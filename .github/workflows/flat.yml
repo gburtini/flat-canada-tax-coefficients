@@ -6,10 +6,7 @@ on:
   push:
     paths:
       - .github/workflows/flat.yml
-      - ./src/processors/cpp.ts
-      - ./src/processors/pensions.ts
-      - ./src/processors/tfsa.ts
-      - ./src/processors/rrif.ts
+      - ./src/
 jobs:
   scheduled:
     runs-on: ubuntu-latest
@@ -44,3 +41,9 @@ jobs:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/t4rsp-t4rif-information-returns/payments/chart-prescribed-factors.html
           downloaded_filename: rrif.html
           postprocess: ./src/processors/rrif.ts
+      - name: Fetch data (personal tax rates)
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+          downloaded_filename: personal.html
+          postprocess: ./src/processors/personal.ts
