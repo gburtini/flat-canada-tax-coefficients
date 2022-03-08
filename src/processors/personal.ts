@@ -47,6 +47,7 @@ await runner(
 
     console.log(federal, provinceMap);
 
+    // TODO: restructure the whole thing to "from" and "to" -- maybe separate out a cleaner step though, from raw text to cleaned values
     const structure: {
       name: string;
       year: number;

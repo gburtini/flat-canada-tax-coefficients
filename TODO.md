@@ -26,6 +26,8 @@ Income and corporate tax coefficients, inclusion rates and other factors that ar
 - Processors need to be implemented.
 - combiners::ensureExtend need to be tested with %CURRENT_YEAR% as an adjuvant.
 
+This has been partially implemented with personal tax rates. They need to be cleaned up to a more appropriate format (from, to, and validation of the accrual stuff) and historical data extended.
+
 ## Multi-source Derived Data - Usability
 
 A smaller number of JSON exports providing organized, joined data over appropriate keys (usually years) will improve usability considerably. For example, consider how `cpp.json` includes YMPE data, but so does `pensions.json`.

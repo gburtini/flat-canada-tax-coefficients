@@ -4,13 +4,13 @@ An automatically updating dataset of coefficients necessary for Canadian tax com
 
 ## Data
 
-| Data                 | Format                     | Processor                                 | Origin                                                                                                                                                                                       |
-| -------------------- | -------------------------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CPP coefficients     | [JSON](data/cpp.json)      | [cpp.ts](src/processors/cpp.ts)           | [1](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html) |
-| Pension coefficients | [JSON](data/pensions.json) | [pensions.ts](src/processors/pensions.ts) | [1](https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html)                                                            |
-| RRIF factors         | [JSON](data/rrif.json)     | [rrif.ts](src/processors/rrif.ts)         | [1](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/t4rsp-t4rif-information-returns/payments/chart-prescribed-factors.html)                |
-| TFSA limits          | [JSON](data/tfsa.json)     | [tfsa.ts](src/processors/tfsa.ts)         | [1](https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html)                                                            |
-| Personal tax rates   | [JSON](data/personal.json) | [personal.ts](src/processors/personal.ts) | [1](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html)               |
+| Data                                                   | Format                     | Processor                                 | Origin                                                                                                                                                                                       |
+| ------------------------------------------------------ | -------------------------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CPP coefficients: rates, limits, exemptions            | [JSON](data/cpp.json)      | [cpp.ts](src/processors/cpp.ts)           | [1](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html) |
+| Pension coefficients                                   | [JSON](data/pensions.json) | [pensions.ts](src/processors/pensions.ts) | [1](https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html)                                                            |
+| RRIF mandatory disbursement factors                    | [JSON](data/rrif.json)     | [rrif.ts](src/processors/rrif.ts)         | [1](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/t4rsp-t4rif-information-returns/payments/chart-prescribed-factors.html)                |
+| TFSA limits (starting in 2009)                         | [JSON](data/tfsa.json)     | [tfsa.ts](src/processors/tfsa.ts)         | [1](https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html)                                                            |
+| Personal tax rates, federal and provincial (no Quebec) | [JSON](data/personal.json) | [personal.ts](src/processors/personal.ts) | [1](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html)               |
 
 ## Sources
 
@@ -30,7 +30,7 @@ _No sources have been discontinued or superseded._
 
 - [Corporation Tax Rates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html)
 - [Indexation adjustment for personal income tax and benefit amounts](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html)
-- [Provincial rate data](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/provincial-territorial-tax-credits-individuals.html) currently accrued from the federal page.
+- [Provincial rate data](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/provincial-territorial-tax-credits-individuals.html), currently accrued from the federal and provincial mixed page.
 
 ## License
 
