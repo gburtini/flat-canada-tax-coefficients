@@ -1,4 +1,4 @@
-import { Cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
+import { Cheerio } from "https://deno.land/x/cheerio@1.0.7/mod.ts";
 
 export function cleanNumber(s: string) {
   const multiplier = s.trim().endsWith("%") ? 1 / 100 : 1;

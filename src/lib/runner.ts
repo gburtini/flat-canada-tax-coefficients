@@ -3,8 +3,8 @@ import {
   readJSON,
   readTXT,
   removeFile,
-} from "https://deno.land/x/flat@0.0.14/mod.ts";
-import { cheerio, Cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
+} from "https://deno.land/x/flat@0.0.15/mod.ts";
+import { cheerio, Cheerio } from "https://deno.land/x/cheerio@1.0.7/mod.ts";
 import { cleanHeader, cleanCell, cleanRawData } from "./cleaners.ts";
 import { ensureExtend } from "./combiners.ts";
 

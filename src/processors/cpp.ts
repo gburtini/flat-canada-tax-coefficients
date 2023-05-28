@@ -1,4 +1,4 @@
-import { cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
+import { cheerio } from "https://deno.land/x/cheerio@1.0.7/mod.ts";
 import { runner, defaultProcessor, defaultCleaner } from "../lib/runner.ts";
 
 const FIELD_MAP: { [key: string]: string } = {

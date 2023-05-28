@@ -1,5 +1,5 @@
 import { runner, defaultProcessor, defaultCleaner } from "../lib/runner.ts";
-import { cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
+import { cheerio } from "https://deno.land/x/cheerio@1.0.7/mod.ts";
 import { cleanTaxRateString, cleanHeader } from "../lib/cleaners.ts";
 await runner(
   Deno.args[0],
