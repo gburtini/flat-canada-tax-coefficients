@@ -1,5 +1,11 @@
 [
   {
+    "age": null,
+    "preMarch1986Factor": null,
+    "qualifyingFactor": null,
+    "allOtherFactor": null
+  },
+  {
     "age": 71,
     "preMarch1986Factor": 0.0526,
     "qualifyingFactor": 0.0526,

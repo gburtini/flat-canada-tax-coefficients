@@ -1,12 +1,30 @@
 [
   {
-    "year": 2023,
+    "year": null,
     "mpLimit": null,
-    "dbLimit": 1,
-    "rrspLimit": 30780,
+    "dbLimit": null,
+    "rrspLimit": null,
     "dpspLimit": null,
     "aldaLimit": null,
     "ympe": null
+  },
+  {
+    "year": 2024,
+    "mpLimit": null,
+    "dbLimit": 1,
+    "rrspLimit": 31560,
+    "dpspLimit": null,
+    "aldaLimit": null,
+    "ympe": null
+  },
+  {
+    "year": 2023,
+    "mpLimit": 31560,
+    "dbLimit": 3506.67,
+    "rrspLimit": 30780,
+    "dpspLimit": 15780,
+    "aldaLimit": 160000,
+    "ympe": 66600
   },
   {
     "year": 2022,
