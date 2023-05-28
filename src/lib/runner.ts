@@ -55,7 +55,9 @@ export async function runner<T>(
     // clean up after yourself. maybe. TODO: else, archive it?
     if (options.removeFile) await removeFile(inputFileName);
   } catch (error) {
-    console.log(error);
+    console.error(error);
+
+    Deno.exit(1);
   }
 }
 
