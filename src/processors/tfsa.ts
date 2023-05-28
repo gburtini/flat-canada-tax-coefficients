@@ -1,6 +1,6 @@
 import { runner, defaultProcessor, defaultCleaner } from "../lib/runner.ts";
 
-const TABLE_HEADER = "TFSA dollar";
+const TABLE_HEADER = "TFSA dollar limit";
 const selector = `table:has(caption:contains('${TABLE_HEADER}'))`;
 const keys: string[] = ["year", "limit"];
 
