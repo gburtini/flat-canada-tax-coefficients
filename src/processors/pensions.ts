@@ -17,8 +17,5 @@ const selector = `caption:contains('${TABLE_HEADER}')`;
 await runner(
   Deno.args[0],
   defaultProcessor(selector),
-  defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS),
-  {
-    removeFile: true,
-  }
+  defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS)
 );

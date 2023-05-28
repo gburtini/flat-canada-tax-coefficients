@@ -74,8 +74,5 @@ await runner(
 
     return structure;
   },
-  null,
-  {
-    removeFile: true,
-  }
+  null
 );

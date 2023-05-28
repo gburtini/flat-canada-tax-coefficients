@@ -22,33 +22,33 @@ jobs:
         if: always()
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html
-          downloaded_filename: cpp.html
+          downloaded_filename: ./raw/cpp.html
           postprocess: ./src/processors/cpp.ts
       - name: Fetch data (MP, DB, RRSP, DPSP, ALDA)
         uses: githubocto/flat@v3
         if: always()
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
-          downloaded_filename: pensions.html
+          downloaded_filename: ./raw/pensions.html
           postprocess: ./src/processors/pensions.ts
       - name: Fetch data (TFSA limits)
         uses: githubocto/flat@v3
         if: always()
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
-          downloaded_filename: tfsa.html
+          downloaded_filename: ./raw/tfsa.html
           postprocess: ./src/processors/tfsa.ts
       - name: Fetch data (RRIF factors)
         uses: githubocto/flat@v3
         if: always()
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/t4rsp-t4rif-information-returns/payments/chart-prescribed-factors.html
-          downloaded_filename: rrif.html
+          downloaded_filename: ./raw/rrif.html
           postprocess: ./src/processors/rrif.ts
       - name: Fetch data (personal tax rates)
         uses: githubocto/flat@v3
         if: always()
         with:
           http_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
-          downloaded_filename: personal.html
+          downloaded_filename: ./raw/personal.html
           postprocess: ./src/processors/personal.ts

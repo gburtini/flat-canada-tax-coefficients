@@ -4,6 +4,4 @@ const TABLE_HEADER = "TFSA dollar";
 const selector = `caption:contains('${TABLE_HEADER}')`;
 const keys: string[] = ["year", "limit"];
 
-await runner(Deno.args[0], defaultProcessor(selector, keys), defaultCleaner(), {
-  removeFile: true,
-});
+await runner(Deno.args[0], defaultProcessor(selector, keys), defaultCleaner());
