@@ -12,7 +12,7 @@ const FIELD_MAP: { [key: string]: string } = {
 const FIELD_MULTIPLIERS: { [key: string]: number } = {};
 
 const TABLE_HEADER = "MP, DB, RRSP, DPSP, ALDA, TFSA limits and the YMPE.";
-const selector = `caption:contains('${TABLE_HEADER}')`;
+const selector = `table:has(caption:contains('${TABLE_HEADER}'))`;
 
 await runner(
   Deno.args[0],
