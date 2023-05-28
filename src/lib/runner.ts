@@ -97,11 +97,11 @@ export async function processTable(
 
   const table = $(tableSelector);
   const rows = table.find(rowSelector);
-  const skippingHeader = skipHeader === null ? keys !== null : skipHeader;
+  const skippingHeader = skipHeader === null ? keys === null : skipHeader;
 
   if (table.length !== 1)
     throw new Error("Expected exactly one table, but found " + table.length);
-  if (rows.length < (skippingHeader ? 1 : 2))
+  if (rows.length < (skippingHeader ? 2 : 1))
     throw new Error(
       "Expected at least one data row and one header row. Something has changed for the worse."
     );

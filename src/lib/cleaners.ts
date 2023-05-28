@@ -86,7 +86,7 @@ export function cleanTaxRateString(str: string): {
 
   const thresholdRegex = "\\$?([\\d,\\.]+\\d)";
   const rules = [];
-  console.log(str);
+
   for (const word of Object.keys(PREPEND_WORDS)) {
     const results = str.match(new RegExp(word + "\\s+" + thresholdRegex));
 
