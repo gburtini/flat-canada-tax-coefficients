@@ -1,7 +1,3 @@
-## Retain Raw Inputs - Quality
-
-All forms of raw input should be retained somewhere. At a minimum, the untransformed fields should be retained for alternative uses in the JSON exports.
-
 ## Stricter Typing - Quality
 
 Most fields are derived from table headers at the moment; if the table changes, so does the field. This causes a few problems:
