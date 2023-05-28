@@ -1,14 +1,5 @@
 [
   {
-    "year": null,
-    "mpLimit": null,
-    "dbLimit": null,
-    "rrspLimit": null,
-    "dpspLimit": null,
-    "aldaLimit": null,
-    "ympe": null
-  },
-  {
     "year": 2024,
     "mpLimit": null,
     "dbLimit": 1,
