@@ -14,7 +14,7 @@ jobs:
       - name: Setup deno
         uses: denoland/setup-deno@main
         with:
-          deno-version: v1.10.x
+          deno-version: v1.34.x
       - name: Check out repo
         uses: actions/checkout@v2
       - name: Fetch data (CPP contribution rates, maximums and exemptions)
