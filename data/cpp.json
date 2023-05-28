@@ -1,5 +1,14 @@
 [
   {
+    "year": 2023,
+    "maximumAnnualPensionableEarnings": 66600,
+    "basicExemptionAmount": 3500,
+    "maximumContributoryEarnings": 63100,
+    "employmentContributionRate": 0.059500000000000004,
+    "maximumAnnualEmploymentContribution": 3754.45,
+    "maximumAnnualSelfEmploymentContribution": 7508.9
+  },
+  {
     "year": 2022,
     "maximumAnnualPensionableEarnings": 64900,
     "basicExemptionAmount": 3500,
@@ -383,7 +392,7 @@
     "basicExemptionAmount": 1300,
     "maximumContributoryEarnings": 11800,
     "employmentContributionRate": 0.018000000000000002,
-    "maximumAnnualEmploymentContribution": 212.1,
+    "maximumAnnualEmploymentContribution": 212.4,
     "maximumAnnualSelfEmploymentContribution": 424.8
   },
   {
