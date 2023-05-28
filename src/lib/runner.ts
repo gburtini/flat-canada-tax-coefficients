@@ -17,7 +17,9 @@ export async function runner<T>(
     removeFile: false,
   }
 ) {
-  const outputFilename = dataFile.split(".")[0] + ".json";
+  const fileName = dataFile.split("/").pop() ?? dataFile;
+  
+  const outputFilename = fileName.split(".")[0] + ".json";
   const inputFileName = dataFile;
 
   console.log("Beginning run for", dataFile);
@@ -94,9 +96,11 @@ export async function processTable(
   }
 
   const table = $(tableSelector);
+  console.log({table})
   const rows = table.find(rowSelector);
   const skippingHeader = skipHeader === null ? keys !== null : skipHeader;
 
+  console.log({rows});
   if (table.length !== 1)
     throw new Error("Expected exactly one table, but found " + table.length);
   if (rows.length < (skippingHeader ? 1 : 2))
