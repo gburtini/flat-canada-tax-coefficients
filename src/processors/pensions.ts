@@ -6,12 +6,13 @@ const FIELD_MAP: { [key: string]: string } = {
   "DB limit": "dbLimit",
   "RRSP dollar limit": "rrspLimit",
   "DPSP limit (1/2 MP limit)": "dpspLimit",
-  "ALDA dollar limit": "aldaLimit",
+  // "ALDA dollar limit": "aldaLimit", // moved to TFSA table.
   YMPE: "ympe",
+  YAMPE: "yampe",
 };
 const FIELD_MULTIPLIERS: { [key: string]: number } = {};
 
-const TABLE_HEADER = "MP, DB, RRSP, DPSP, ALDA, TFSA limits and the YMPE.";
+const TABLE_HEADER = "MP, DB, RRSP, DPSP limits, YMPE and the YAMPE";
 const selector = `table:has(caption:contains('${TABLE_HEADER}'))`;
 
 await runner(
