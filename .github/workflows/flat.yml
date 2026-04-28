@@ -6,49 +6,68 @@ on:
   push:
     paths:
       - .github/workflows/flat.yml
-      - ./src/
+      - .github/actions/**
+      - src/**
+      - data/**
+      - raw/**
+permissions:
+  contents: write
 jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup deno
-        uses: denoland/setup-deno@main
-        with:
-          deno-version: v1.34.x
       - name: Check out repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+      - name: Setup deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
       - name: Fetch data (CPP contribution rates, maximums and exemptions)
-        uses: githubocto/flat@v3
-        if: always()
+        uses: ./.github/actions/fetch-and-process
         with:
-          http_url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html
-          downloaded_filename: ./raw/cpp.html
-          postprocess: ./src/processors/cpp.ts
+          url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html
+          output: ./raw/cpp.html
+          processor: ./src/processors/cpp.ts
+      - name: Fetch data (CPP2 contribution rates and maximums)
+        uses: ./.github/actions/fetch-and-process
+        with:
+          url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/second-additional-cpp-contribution-rates-maximums.html
+          output: ./raw/cpp2.html
+          processor: ./src/processors/cpp2.ts
       - name: Fetch data (MP, DB, RRSP, DPSP, ALDA)
-        uses: githubocto/flat@v3
-        if: always()
+        uses: ./.github/actions/fetch-and-process
         with:
-          http_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
-          downloaded_filename: ./raw/pensions.html
-          postprocess: ./src/processors/pensions.ts
+          url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+          output: ./raw/pensions.html
+          processor: ./src/processors/pensions.ts
       - name: Fetch data (TFSA limits)
-        uses: githubocto/flat@v3
-        if: always()
+        uses: ./.github/actions/fetch-and-process
         with:
-          http_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
-          downloaded_filename: ./raw/tfsa.html
-          postprocess: ./src/processors/tfsa.ts
+          url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+          output: ./raw/tfsa.html
+          processor: ./src/processors/tfsa.ts
       - name: Fetch data (RRIF factors)
-        uses: githubocto/flat@v3
-        if: always()
+        uses: ./.github/actions/fetch-and-process
         with:
-          http_url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/t4rsp-t4rif-information-returns/payments/chart-prescribed-factors.html
-          downloaded_filename: ./raw/rrif.html
-          postprocess: ./src/processors/rrif.ts
+          url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/completing-slips-summaries/t4rsp-t4rif-information-returns/payments/chart-prescribed-factors.html
+          output: ./raw/rrif.html
+          processor: ./src/processors/rrif.ts
       - name: Fetch data (personal tax rates)
-        uses: githubocto/flat@v3
-        if: always()
+        uses: ./.github/actions/fetch-and-process
         with:
-          http_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
-          downloaded_filename: ./raw/personal.html
-          postprocess: ./src/processors/personal.ts
+          url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/income-tax/reducing-remuneration-subject-income-tax.html
+          output: ./raw/personal.html
+          processor: ./src/processors/personal.ts
+      - name: Commit changed data
+        run: |
+          git add data raw
+
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Flat: latest data ($(date --utc --iso-8601=seconds))"
+          git push

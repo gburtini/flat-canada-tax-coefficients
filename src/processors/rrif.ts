@@ -1,4 +1,4 @@
-import { runner, defaultProcessor, defaultCleaner } from "../lib/runner.ts";
+import { defaultCleaner, defaultProcessor, runner } from "../lib/runner.ts";
 
 const FIELD_MAP: { [key: string]: string } = {
   "Age of the RRIF annuitant or spouse or common-law partner": "age",
@@ -14,5 +14,5 @@ const selector = `table:has(caption:contains('${TABLE_HEADER}'))`;
 await runner(
   Deno.args[0],
   defaultProcessor(selector),
-  defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS)
+  defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS),
 );

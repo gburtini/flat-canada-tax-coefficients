@@ -1,0 +1,25 @@
+name: Fetch and process data
+description: Download a source file and run a Deno processor against it.
+inputs:
+  url:
+    description: Source URL to download.
+    required: true
+  output:
+    description: Path where the raw downloaded file should be written.
+    required: true
+  processor:
+    description: Deno processor script to run after download.
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Download source
+      shell: bash
+      run: |
+        mkdir -p "$(dirname "${{ inputs.output }}")"
+        curl --fail --location --silent --show-error --retry 3 \
+          --output "${{ inputs.output }}" \
+          "${{ inputs.url }}"
+    - name: Process source
+      shell: bash
+      run: deno run --allow-read --allow-write "${{ inputs.processor }}" "${{ inputs.output }}"

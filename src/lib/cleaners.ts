@@ -1,13 +1,17 @@
-import { Cheerio } from "https://deno.land/x/cheerio@1.0.7/mod.ts";
+import type { AnyNode, Cheerio } from "npm:cheerio@1.0.0-rc.12";
+import { DataRow } from "./combiners.ts";
+
+type TaxRule = [string, number];
 
 export function cleanNumber(s: string) {
   const multiplier = s.trim().endsWith("%") ? 1 / 100 : 1;
-  return (
-    parseFloat(s.replace(/[$,%]/g, "").replace(/\s+/g, " ").trim()) * multiplier
-  );
+  const normalized = s.replace(/[$,%]/g, "").replace(/\s+/g, " ").trim();
+  const numericPart = normalized.match(/-?(?:\d[\d,]*(?:\.\d+)?|\.\d+)/);
+  return (numericPart ? parseFloat(numericPart[0].replace(/,/g, "")) : NaN) *
+    multiplier;
 }
 
-export function cleanHeader(cell: Cheerio, removeSelector = "sup") {
+export function cleanHeader(cell: Cheerio<AnyNode>, removeSelector = "sup") {
   // small mess to remove the <sup> tags or other non-header text in <th> cells.
   return cell
     .clone()
@@ -19,7 +23,7 @@ export function cleanHeader(cell: Cheerio, removeSelector = "sup") {
     .trim();
 }
 
-export function cleanCell(cell: Cheerio) {
+export function cleanCell(cell: Cheerio<AnyNode>) {
   return cell.text().replace(/\s+/g, " ").trim();
 }
 
@@ -27,44 +31,46 @@ export function cleanCell(cell: Cheerio) {
 export function cleanRawData(
   rawData: { [key: string]: string }[],
   fieldMap: { [key: string]: string } = {},
-  fieldMultipliers: { [key: string]: number } = {}
-) {
+  fieldMultipliers: { [key: string]: number } = {},
+): DataRow[] {
   return rawData.map((row) => {
-    if (typeof row !== "object" || row === null)
+    if (typeof row !== "object" || row === null) {
       throw new Error("Row is not an object.");
+    }
 
-    return Object.fromEntries(
-      Object.entries(row).map(([k, v]) => {
-        // rename all fields per the FIELD_MAP
-        const newKey = fieldMap[k] ?? k;
-        let newValue: number | string = v;
+    const cleanedRow: DataRow = {};
+    for (const [k, v] of Object.entries(row)) {
+      // rename all fields per the FIELD_MAP
+      const newKey = fieldMap[k] ?? k;
+      let newValue: number | string = v;
 
-        // TODO: because of the floating point error introduced here, we could imagine
-        // an end user preferring the raw string values. Return these as well.
-        // for this file, there's meaningful text in some of the values too, currently cast to null.
+      // TODO: because of the floating point error introduced here, we could imagine
+      // an end user preferring the raw string values. Return these as well.
+      // for this file, there's meaningful text in some of the values too, currently cast to null.
 
-        if (typeof newValue === "string") {
-          // convert numbers to numeric types.
-          // strip dollar signs, commas
-          // NOTE: stripping % here probably indicates a bug unless we have handled
-          // the percentage in the convert percentages rules below this.
-          newValue = cleanNumber(newValue);
+      if (typeof newValue === "string") {
+        // convert numbers to numeric types.
+        // strip dollar signs, commas
+        // NOTE: stripping % here probably indicates a bug unless we have handled
+        // the percentage in the convert percentages rules below this.
+        newValue = cleanNumber(newValue);
 
-          // convert percentages to their raw values
-          if (newKey in fieldMultipliers) {
-            newValue = newValue * fieldMultipliers[newKey];
-          }
+        // convert percentages to their raw values
+        if (newKey in fieldMultipliers) {
+          newValue = newValue * fieldMultipliers[newKey];
         }
+      }
 
-        return [newKey, newValue];
-      })
-    );
+      cleanedRow[newKey] = newValue;
+    }
+
+    return cleanedRow;
   });
 }
 
 export function cleanTaxRateString(str: string): {
   rate: number;
-  rules: [string, number][];
+  rules: TaxRule[];
 } {
   const PREPEND_WORDS: { [key: string]: string } = {
     "on the first": "<=",
@@ -79,23 +85,20 @@ export function cleanTaxRateString(str: string): {
   const rate = str.match(/([\d\.]+)\%/g);
   if (!rate || rate.length !== 1) {
     throw new Error(
-      "Tried to process a rate from a string that doesn't match the expected format."
+      "Tried to process a rate from a string that doesn't match the expected format.",
     );
   }
   const foundRate = cleanNumber(rate[0]);
 
   const thresholdRegex = "\\$?([\\d,\\.]+\\d)";
-  const rules = [];
+  const rules: TaxRule[] = [];
 
   for (const word of Object.keys(PREPEND_WORDS)) {
     const results = str.match(new RegExp(word + "\\s+" + thresholdRegex));
 
     console.log(word, results);
     if (results) {
-      rules.push([PREPEND_WORDS[word], cleanNumber(results[1])] as [
-        string,
-        number
-      ]);
+      rules.push([PREPEND_WORDS[word], cleanNumber(results[1])]);
     }
   }
 
@@ -103,17 +106,15 @@ export function cleanTaxRateString(str: string): {
     const results = str.match(new RegExp(thresholdRegex + "\\s+" + word));
 
     if (results) {
-      rules.push([APPEND_WORDS[word], cleanNumber(results[1])] as [
-        string,
-        number
-      ]);
+      rules.push([APPEND_WORDS[word], cleanNumber(results[1])]);
     }
   }
 
-  if (rules.length === 0)
+  if (rules.length === 0) {
     throw new Error(
-      "Tried to process a rate from a string that has no thresholds: " + str
+      "Tried to process a rate from a string that has no thresholds: " + str,
     );
+  }
 
   // TODO: reduce and look for contradictions in the rules.
 

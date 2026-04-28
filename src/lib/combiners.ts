@@ -1,9 +1,11 @@
+export type DataRow = Record<string, unknown>;
+
 export function ensureExtend(
-  candidateData: { [key: string]: any }[],
-  existingData: { [key: string]: any }[],
-  key = "year"
+  candidateData: DataRow[],
+  existingData: DataRow[],
+  key = "year",
 ) {
-  // ensure that the candidate data doesn't drop any rows off the existing dataset.
+  // ensure that the candidate data doesn't drop rows from the existing dataset.
   // TODO: figure out how to also ensure that *keys* aren't dropped in the future.
 
   const resultingData = [...candidateData];
