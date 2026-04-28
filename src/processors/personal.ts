@@ -1,78 +1,113 @@
-import { runner, defaultProcessor, defaultCleaner } from "../lib/runner.ts";
-import { cheerio } from "https://deno.land/x/cheerio@1.0.7/mod.ts";
-import { cleanTaxRateString, cleanHeader } from "../lib/cleaners.ts";
+import { runner } from "../lib/runner.ts";
+import * as cheerio from "npm:cheerio@1.0.0-rc.12";
+import { cleanCell, cleanHeader, cleanNumber } from "../lib/cleaners.ts";
+
+type PersonalTaxRate = {
+  name: string;
+  year: number;
+  period: string | null;
+  rate: {
+    rate: number;
+    rules: [string, number][];
+  };
+};
+
 await runner(
   Deno.args[0],
-  async (html) => {
-    // TODO: clean this up and handle the accrual data.
-
+  async (html: string): Promise<PersonalTaxRate[]> => {
     const $ = await cheerio.load(html);
+    const structure: PersonalTaxRate[] = [];
 
-    const federalHeader = $("h2#federal");
+    $("table").each((_, table) => {
+      const caption = cleanHeader($(table).find("caption").first());
+      if (!caption.includes("tax rates and income thresholds")) return;
+      if (caption.includes("Quebec")) return;
 
-    const yearMatch = cleanHeader(federalHeader).match("[0-9]{4}");
-    if (!yearMatch || yearMatch.length > 1)
-      throw new Error(
-        "Could not find year or found more than one possible value for year."
-      );
-    const year = parseInt(yearMatch[0]);
+      const yearMatch = caption.match(/\b(20\d{2})\b/);
+      if (!yearMatch) return;
 
-    const federalRates: string[] = federalHeader
-      .parent()
-      .next()
-      .find("li")
-      .map((i, p) => $(p).text())
-      .get();
+      const parsedCaption = parseCaption(caption, parseInt(yearMatch[1]));
+      if (!parsedCaption) return;
 
-    const federal = federalRates.map(cleanTaxRateString);
+      $(table).find("tr").each((_, row) => {
+        const cells = $(row).find("td,th").map((_, cell) => cleanCell($(cell)))
+          .get();
 
-    const provinceMap: {
-      [key: string]: { rate: number; rules: [string, number][] }[];
-    } = {};
-    const provincialTable = $(
-      "caption:contains('Provincial and territorial tax rates (combined chart)')"
-    ).closest("table");
-    provincialTable.find("tr").each((i, row) => {
-      if (i === 0) return;
-      const cells = $(row).find("td");
-      const province = cleanHeader(cells.eq(0));
-      const rates: string[] = cells
-        .eq(1)
-        .find("p")
-        .map((i, p) => $(p).text())
-        .get();
+        if (cells.length < 3) return;
 
-      provinceMap[province] = rates.map(cleanTaxRateString);
-    });
+        const from = parseMoney(cells[0]);
+        if (!Number.isFinite(from)) return;
+        const to = cells[1].toLowerCase().includes("over")
+          ? null
+          : parseMoney(cells[1]);
+        const rate = cleanNumber(cells[2]);
+        const rules = buildRules(from, to);
 
-    console.log(federal, provinceMap);
-
-    // TODO: restructure the whole thing to "from" and "to" -- maybe separate out a cleaner step though, from raw text to cleaned values
-    const structure: {
-      name: string;
-      year: number;
-      rate: { rate: number; rules: any[] };
-    }[] = [];
-
-    federal.forEach((rate, i) => {
-      structure.push({
-        name: "federal",
-        year,
-        rate,
-      });
-    });
-
-    Object.keys(provinceMap).forEach((province) => {
-      provinceMap[province].forEach((rate, i) => {
         structure.push({
-          name: province,
-          year,
-          rate,
+          name: parsedCaption.name,
+          year: parsedCaption.year,
+          period: parsedCaption.period,
+          rate: {
+            rate,
+            rules,
+          },
         });
       });
     });
 
+    if (structure.length === 0) {
+      throw new Error("No personal tax rate tables found.");
+    }
+
     return structure;
   },
-  null
+  null,
 );
+
+function parseCaption(
+  caption: string,
+  year: number,
+): { name: string; year: number; period: string | null } | null {
+  const suffix = " tax rates and income thresholds";
+  const prefix = caption.slice(0, caption.indexOf(suffix)).trim();
+  const normalized = prefix.replace(/^New\s+/, "").replace(
+    /\s+\(using the prorated rate\)$/i,
+    "",
+  ).trim();
+
+  const periodFirstMatch = normalized.match(
+    /^(July 1 to December 31|January(?: 1)? to June 30),?\s*(20\d{2})\s+(.*)$/i,
+  );
+  if (periodFirstMatch) {
+    const name = periodFirstMatch[3].trim();
+    if (name.length === 0 || name.toLowerCase() === "quebec") return null;
+    return {
+      name,
+      year: parseInt(periodFirstMatch[2]),
+      period: periodFirstMatch[1],
+    };
+  }
+
+  const yearFirstMatch = normalized.match(/^(20\d{2})\s+(.*)$/);
+  if (!yearFirstMatch) return null;
+
+  const name = yearFirstMatch[2].trim();
+  if (name.length === 0 || name.toLowerCase() === "quebec") return null;
+
+  return {
+    name,
+    year: parseInt(yearFirstMatch[1]),
+    period: null,
+  };
+}
+
+function parseMoney(value: string): number {
+  return cleanNumber(value.replace("and over", ""));
+}
+
+function buildRules(from: number, to: number | null): [string, number][] {
+  const rules: [string, number][] = [];
+  if (from > 0) rules.push([">", from - 0.01]);
+  if (to !== null) rules.push(["<=", to]);
+  return rules;
+}

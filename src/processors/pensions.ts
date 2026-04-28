@@ -1,4 +1,5 @@
-import { runner, defaultProcessor, defaultCleaner } from "../lib/runner.ts";
+import { cleanRawData } from "../lib/cleaners.ts";
+import { defaultProcessor, runner } from "../lib/runner.ts";
 
 const FIELD_MAP: { [key: string]: string } = {
   Year: "year",
@@ -18,5 +19,18 @@ const selector = `table:has(caption:contains('${TABLE_HEADER}'))`;
 await runner(
   Deno.args[0],
   defaultProcessor(selector),
-  defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS)
+  async (rawData: Record<string, string>[]) =>
+    cleanRawData(rawData, FIELD_MAP, FIELD_MULTIPLIERS).filter((row) =>
+      isCompletePensionRow(row)
+    ),
 );
+
+function isCompletePensionRow(row: Record<string, unknown>): boolean {
+  return [
+    row.year,
+    row.mpLimit,
+    row.dbLimit,
+    row.dpspLimit,
+    row.ympe,
+  ].every((value) => typeof value === "number" && Number.isFinite(value));
+}

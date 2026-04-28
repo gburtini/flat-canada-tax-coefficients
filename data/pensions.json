@@ -1,12 +1,21 @@
 [
   {
+    "year": 2026,
+    "mpLimit": 35390,
+    "dbLimit": 3932.22,
+    "rrspLimit": 33810,
+    "dpspLimit": 17695,
+    "ympe": 74600,
+    "yampe": 85000
+  },
+  {
     "year": 2025,
-    "mpLimit": null,
-    "dbLimit": 1,
+    "mpLimit": 33810,
+    "dbLimit": 3756.67,
     "rrspLimit": 32490,
-    "dpspLimit": null,
-    "ympe": null,
-    "yampe": null
+    "dpspLimit": 16905,
+    "ympe": 71300,
+    "yampe": 81200
   },
   {
     "year": 2024,
@@ -322,14 +331,5 @@
     "dpspLimit": 5750,
     "ympe": 28900,
     "yampe": null
-  },
-  {
-    "year": null,
-    "mpLimit": null,
-    "dbLimit": null,
-    "rrspLimit": null,
-    "dpspLimit": null,
-    "aldaLimit": null,
-    "ympe": null
   }
 ]

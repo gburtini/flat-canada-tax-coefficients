@@ -1,62 +1,92 @@
 [
   {
+    "year": 2026,
+    "limit": 7000,
+    "aldaLimit": 180000
+  },
+  {
+    "year": 2025,
+    "limit": 7000,
+    "aldaLimit": 180000
+  },
+  {
+    "year": 2024,
+    "limit": 7000,
+    "aldaLimit": 170000
+  },
+  {
     "year": 2023,
-    "limit": 6500
+    "limit": 6500,
+    "aldaLimit": 160000
   },
   {
     "year": 2022,
-    "limit": 6000
+    "limit": 6000,
+    "aldaLimit": 160000
   },
   {
     "year": 2021,
-    "limit": 6000
+    "limit": 6000,
+    "aldaLimit": 150000
   },
   {
     "year": 2020,
-    "limit": 6000
+    "limit": 6000,
+    "aldaLimit": 150000
   },
   {
     "year": 2019,
-    "limit": 6000
+    "limit": 6000,
+    "aldaLimit": null
   },
   {
     "year": 2018,
-    "limit": 5500
+    "limit": 5500,
+    "aldaLimit": null
   },
   {
     "year": 2017,
-    "limit": 5500
+    "limit": 5500,
+    "aldaLimit": null
   },
   {
     "year": 2016,
-    "limit": 5500
+    "limit": 5500,
+    "aldaLimit": null
   },
   {
     "year": 2015,
-    "limit": 10000
+    "limit": 10000,
+    "aldaLimit": null
   },
   {
     "year": 2014,
-    "limit": 5500
+    "limit": 5500,
+    "aldaLimit": null
   },
   {
     "year": 2013,
-    "limit": 5500
+    "limit": 5500,
+    "aldaLimit": null
   },
   {
     "year": 2012,
-    "limit": 5000
+    "limit": 5000,
+    "aldaLimit": null
   },
   {
     "year": 2011,
-    "limit": 5000
+    "limit": 5000,
+    "aldaLimit": null
   },
   {
     "year": 2010,
-    "limit": 5000
+    "limit": 5000,
+    "aldaLimit": null
   },
   {
     "year": 2009,
-    "limit": 5000
+    "limit": 5000,
+    "aldaLimit": null
   }
 ]

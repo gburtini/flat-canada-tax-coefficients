@@ -1,5 +1,6 @@
-import { cheerio } from "https://deno.land/x/cheerio@1.0.7/mod.ts";
-import { runner, defaultProcessor, defaultCleaner } from "../lib/runner.ts";
+import * as cheerio from "npm:cheerio@1.0.0-rc.12";
+import { cleanCell, cleanHeader } from "../lib/cleaners.ts";
+import { defaultCleaner, runner } from "../lib/runner.ts";
 
 const FIELD_MAP: { [key: string]: string } = {
   Year: "year",
@@ -22,16 +23,44 @@ await runner(
     const $ = await cheerio.load(html);
 
     const tables = $(".table-responsive>table").get();
-    let data: { [key: string]: string }[] = [];
+    const data: { [key: string]: string }[] = [];
     for (const table of tables) {
-      const record = await defaultProcessor(
-        $(table),
-        Object.keys(FIELD_MAP), // TODO: ew, this assumes the keys don't change. Instead, extract them.
-        true
-      )(html);
-      data = [...data, ...record];
+      $(table)
+        .find("tr")
+        .each((_, row) => {
+          const cells = $(row)
+            .find("th,td")
+            .map((_, cell) => cleanCell($(cell)))
+            .get();
+
+          if (cells.length !== Object.keys(FIELD_MAP).length) return;
+          if (cells[0] === "Year") return;
+
+          const headers = $(row)
+            .find("th")
+            .map((_, header) => cleanHeader($(header)))
+            .get();
+
+          if (headers.length === cells.length && headers.length > 0) {
+            data.push(
+              Object.fromEntries(
+                headers.map((header, index) => [header, cells[index]]),
+              ),
+            );
+            return;
+          }
+
+          data.push(
+            Object.fromEntries(
+              Object.keys(FIELD_MAP).map((header, index) => [
+                header,
+                cells[index],
+              ]),
+            ),
+          );
+        });
     }
     return data;
   },
-  defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS)
+  defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS),
 );

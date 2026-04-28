@@ -1,440 +1,816 @@
 [
   {
     "name": "federal",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.14,
       "rules": [
         [
           "<=",
-          53359
+          58523
         ]
-      ],
-      "rate": 0.15
+      ]
     }
   },
   {
     "name": "federal",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.205,
       "rules": [
         [
           ">",
-          53359
+          58523
         ],
         [
           "<=",
-          106717
+          117045
         ]
-      ],
-      "rate": 0.20500000000000002
+      ]
     }
   },
   {
     "name": "federal",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.26,
       "rules": [
         [
           ">",
-          106717
+          117045
         ],
         [
           "<=",
-          165430
+          181440
         ]
-      ],
-      "rate": 0.26
+      ]
     }
   },
   {
     "name": "federal",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.29,
       "rules": [
         [
           ">",
-          165430
+          181440
         ],
         [
           "<=",
-          235675
+          258482
         ]
-      ],
-      "rate": 0.29
+      ]
     }
   },
   {
     "name": "federal",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.33,
       "rules": [
         [
           ">",
-          235675
+          258482
         ]
-      ],
-      "rate": 0.33
+      ]
     }
   },
   {
-    "name": "Newfoundland and Labrador",
-    "year": 2023,
+    "name": "Alberta",
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.08,
       "rules": [
         [
           "<=",
-          41457
+          61200
         ]
-      ],
-      "rate": 0.087
+      ]
     }
   },
   {
-    "name": "Newfoundland and Labrador",
-    "year": 2023,
+    "name": "Alberta",
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.1,
       "rules": [
         [
           ">",
-          41457
+          61200
         ],
         [
           "<=",
-          82913
+          154259
         ]
-      ],
-      "rate": 0.145
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.12,
+      "rules": [
+        [
+          ">",
+          154259
+        ],
+        [
+          "<=",
+          185111
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.13,
+      "rules": [
+        [
+          ">",
+          185111
+        ],
+        [
+          "<=",
+          246813
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          ">",
+          246813
+        ],
+        [
+          "<=",
+          370220
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          ">",
+          370220
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.0506,
+      "rules": [
+        [
+          "<=",
+          50363
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.077,
+      "rules": [
+        [
+          ">",
+          50363
+        ],
+        [
+          "<=",
+          100728
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.105,
+      "rules": [
+        [
+          ">",
+          100728
+        ],
+        [
+          "<=",
+          115648
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.1229,
+      "rules": [
+        [
+          ">",
+          115648
+        ],
+        [
+          "<=",
+          140430
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.147,
+      "rules": [
+        [
+          ">",
+          140430
+        ],
+        [
+          "<=",
+          190405
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.168,
+      "rules": [
+        [
+          ">",
+          190405
+        ],
+        [
+          "<=",
+          265545
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.205,
+      "rules": [
+        [
+          ">",
+          265545
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.108,
+      "rules": [
+        [
+          "<=",
+          47000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.1275,
+      "rules": [
+        [
+          ">",
+          47000
+        ],
+        [
+          "<=",
+          100000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.174,
+      "rules": [
+        [
+          ">",
+          100000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.094,
+      "rules": [
+        [
+          "<=",
+          52333
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          ">",
+          52333
+        ],
+        [
+          "<=",
+          104666
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.16,
+      "rules": [
+        [
+          ">",
+          104666
+        ],
+        [
+          "<=",
+          193861
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.195,
+      "rules": [
+        [
+          ">",
+          193861
+        ]
+      ]
     }
   },
   {
     "name": "Newfoundland and Labrador",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.087,
       "rules": [
         [
-          ">",
-          82913
-        ],
-        [
           "<=",
-          148027
+          44678
         ]
-      ],
-      "rate": 0.158
+      ]
     }
   },
   {
     "name": "Newfoundland and Labrador",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.145,
       "rules": [
         [
           ">",
-          148027
+          44678
         ],
         [
           "<=",
-          207239
+          89354
         ]
-      ],
-      "rate": 0.17800000000000002
+      ]
     }
   },
   {
     "name": "Newfoundland and Labrador",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.158,
       "rules": [
         [
           ">",
-          207239
+          89354
         ],
         [
           "<=",
-          264750
+          159528
         ]
-      ],
-      "rate": 0.198
+      ]
     }
   },
   {
     "name": "Newfoundland and Labrador",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.178,
       "rules": [
         [
           ">",
-          264750
+          159528
         ],
         [
           "<=",
-          529500
+          223340
         ]
-      ],
-      "rate": 0.20800000000000002
+      ]
     }
   },
   {
     "name": "Newfoundland and Labrador",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.198,
       "rules": [
         [
           ">",
-          529500
+          223340
         ],
         [
           "<=",
-          1059000
+          285319
         ]
-      ],
-      "rate": 0.21300000000000002
+      ]
     }
   },
   {
     "name": "Newfoundland and Labrador",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.208,
       "rules": [
         [
           ">",
-          1059000
-        ]
-      ],
-      "rate": 0.218
-    }
-  },
-  {
-    "name": "Prince Edward Island",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          "<=",
-          31984
-        ]
-      ],
-      "rate": 0.098
-    }
-  },
-  {
-    "name": "Prince Edward Island",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          31984
+          285319
         ],
         [
           "<=",
-          63969
+          570638
         ]
-      ],
-      "rate": 0.138
+      ]
     }
   },
   {
-    "name": "Prince Edward Island",
-    "year": 2023,
+    "name": "Newfoundland and Labrador",
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.213,
       "rules": [
         [
           ">",
-          63969
+          570638
+        ],
+        [
+          "<=",
+          1141275
         ]
-      ],
-      "rate": 0.167
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.218,
+      "rules": [
+        [
+          ">",
+          1141275
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.059,
+      "rules": [
+        [
+          "<=",
+          53003
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.086,
+      "rules": [
+        [
+          ">",
+          53003
+        ],
+        [
+          "<=",
+          106009
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.122,
+      "rules": [
+        [
+          ">",
+          106009
+        ],
+        [
+          "<=",
+          172346
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.1405,
+      "rules": [
+        [
+          ">",
+          172346
+        ]
+      ]
     }
   },
   {
     "name": "Nova Scotia",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.0879,
       "rules": [
         [
           "<=",
-          29590
+          30995
         ]
-      ],
-      "rate": 0.08789999999999999
+      ]
     }
   },
   {
     "name": "Nova Scotia",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.1495,
       "rules": [
         [
           ">",
-          29590
+          30995
         ],
         [
           "<=",
-          59180
+          61991
         ]
-      ],
-      "rate": 0.1495
+      ]
     }
   },
   {
     "name": "Nova Scotia",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.1667,
       "rules": [
         [
           ">",
-          59180
+          61991
         ],
         [
           "<=",
-          93000
+          97417
         ]
-      ],
-      "rate": 0.16670000000000001
+      ]
     }
   },
   {
     "name": "Nova Scotia",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.175,
       "rules": [
         [
           ">",
-          93000
+          97417
+        ],
+        [
+          "<=",
+          157124
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.21,
+      "rules": [
+        [
+          ">",
+          157124
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.04,
+      "rules": [
+        [
+          "<=",
+          55801
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.07,
+      "rules": [
+        [
+          ">",
+          55801
+        ],
+        [
+          "<=",
+          111602
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.09,
+      "rules": [
+        [
+          ">",
+          111602
+        ],
+        [
+          "<=",
+          181439
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.115,
+      "rules": [
+        [
+          ">",
+          181439
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.0505,
+      "rules": [
+        [
+          "<=",
+          53891
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.0915,
+      "rules": [
+        [
+          ">",
+          53891
+        ],
+        [
+          "<=",
+          107785
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.1116,
+      "rules": [
+        [
+          ">",
+          107785
         ],
         [
           "<=",
           150000
         ]
-      ],
-      "rate": 0.17500000000000002
-    }
-  },
-  {
-    "name": "Nova Scotia",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          150000
-        ]
-      ],
-      "rate": 0.21
-    }
-  },
-  {
-    "name": "New Brunswick",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          "<=",
-          47715
-        ]
-      ],
-      "rate": 0.094
-    }
-  },
-  {
-    "name": "New Brunswick",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          47715
-        ],
-        [
-          "<=",
-          95431
-        ]
-      ],
-      "rate": 0.14
-    }
-  },
-  {
-    "name": "New Brunswick",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          95431
-        ],
-        [
-          "<=",
-          176756
-        ]
-      ],
-      "rate": 0.16
-    }
-  },
-  {
-    "name": "New Brunswick",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          176756
-        ]
-      ],
-      "rate": 0.195
+      ]
     }
   },
   {
     "name": "Ontario",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
-      "rules": [
-        [
-          "<=",
-          49231
-        ]
-      ],
-      "rate": 0.050499999999999996
-    }
-  },
-  {
-    "name": "Ontario",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          49231
-        ],
-        [
-          "<=",
-          98463
-        ]
-      ],
-      "rate": 0.09150000000000001
-    }
-  },
-  {
-    "name": "Ontario",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          98463
-        ],
-        [
-          "<=",
-          150000
-        ]
-      ],
-      "rate": 0.1116
-    }
-  },
-  {
-    "name": "Ontario",
-    "year": 2023,
-    "rate": {
+      "rate": 0.1216,
       "rules": [
         [
           ">",
@@ -444,314 +820,2495 @@
           "<=",
           220000
         ]
-      ],
-      "rate": 0.1216
+      ]
     }
   },
   {
     "name": "Ontario",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.1316,
       "rules": [
         [
           ">",
           220000
         ]
-      ],
-      "rate": 0.1316
+      ]
     }
   },
   {
-    "name": "Manitoba",
-    "year": 2023,
+    "name": "Prince Edward Island",
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.095,
       "rules": [
         [
           "<=",
-          36842
+          33928
         ]
-      ],
-      "rate": 0.10800000000000001
+      ]
     }
   },
   {
-    "name": "Manitoba",
-    "year": 2023,
+    "name": "Prince Edward Island",
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.1347,
       "rules": [
         [
           ">",
-          36842
+          33928
         ],
         [
           "<=",
-          79625
+          65820
         ]
-      ],
-      "rate": 0.1275
+      ]
     }
   },
   {
-    "name": "Manitoba",
-    "year": 2023,
+    "name": "Prince Edward Island",
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.166,
       "rules": [
         [
           ">",
-          79625
+          65820
+        ],
+        [
+          "<=",
+          106890
         ]
-      ],
-      "rate": 0.174
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.1762,
+      "rules": [
+        [
+          ">",
+          106890
+        ],
+        [
+          "<=",
+          142250
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.19,
+      "rules": [
+        [
+          ">",
+          142250
+        ]
+      ]
     }
   },
   {
     "name": "Saskatchewan",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.105,
       "rules": [
         [
           "<=",
-          49720
+          54532
         ]
-      ],
-      "rate": 0.105
+      ]
     }
   },
   {
     "name": "Saskatchewan",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.125,
       "rules": [
         [
           ">",
-          49720
+          54532
         ],
         [
           "<=",
-          142058
+          155805
         ]
-      ],
-      "rate": 0.125
+      ]
     }
   },
   {
     "name": "Saskatchewan",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.145,
       "rules": [
         [
           ">",
-          142058
+          155805
         ]
-      ],
-      "rate": 0.145
-    }
-  },
-  {
-    "name": "Alberta",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          "<=",
-          142292
-        ]
-      ],
-      "rate": 0.1
-    }
-  },
-  {
-    "name": "Alberta",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          142292
-        ],
-        [
-          "<=",
-          170751
-        ]
-      ],
-      "rate": 0.12
-    }
-  },
-  {
-    "name": "Alberta",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          170751
-        ],
-        [
-          "<=",
-          227668
-        ]
-      ],
-      "rate": 0.13
-    }
-  },
-  {
-    "name": "Alberta",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          227668
-        ],
-        [
-          "<=",
-          341502
-        ]
-      ],
-      "rate": 0.14
-    }
-  },
-  {
-    "name": "Alberta",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          341502
-        ]
-      ],
-      "rate": 0.15
-    }
-  },
-  {
-    "name": "British Columbia",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          "<=",
-          45654
-        ]
-      ],
-      "rate": 0.0506
-    }
-  },
-  {
-    "name": "British Columbia",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          45654
-        ],
-        [
-          "<=",
-          91310
-        ]
-      ],
-      "rate": 0.077
-    }
-  },
-  {
-    "name": "British Columbia",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          91310
-        ],
-        [
-          "<=",
-          104835
-        ]
-      ],
-      "rate": 0.105
-    }
-  },
-  {
-    "name": "British Columbia",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          104835
-        ],
-        [
-          "<=",
-          127299
-        ]
-      ],
-      "rate": 0.1229
-    }
-  },
-  {
-    "name": "British Columbia",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          127299
-        ],
-        [
-          "<=",
-          172602
-        ]
-      ],
-      "rate": 0.147
-    }
-  },
-  {
-    "name": "British Columbia",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          172602
-        ],
-        [
-          "<=",
-          240716
-        ]
-      ],
-      "rate": 0.168
-    }
-  },
-  {
-    "name": "British Columbia",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          240716
-        ]
-      ],
-      "rate": 0.20500000000000002
+      ]
     }
   },
   {
     "name": "Yukon",
-    "year": 2023,
+    "year": 2026,
+    "period": null,
     "rate": {
+      "rate": 0.064,
+      "rules": [
+        [
+          "<=",
+          58523
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.09,
+      "rules": [
+        [
+          ">",
+          58523
+        ],
+        [
+          "<=",
+          117045
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.109,
+      "rules": [
+        [
+          ">",
+          117045
+        ],
+        [
+          "<=",
+          181440
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.128,
+      "rules": [
+        [
+          ">",
+          181440
+        ],
+        [
+          "<=",
+          500000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2026,
+    "period": null,
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          ">",
+          500000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          "<=",
+          57375
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.205,
+      "rules": [
+        [
+          ">",
+          57375
+        ],
+        [
+          "<=",
+          114750
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.26,
+      "rules": [
+        [
+          ">",
+          114750
+        ],
+        [
+          "<=",
+          177882
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.29,
+      "rules": [
+        [
+          ">",
+          177882
+        ],
+        [
+          "<=",
+          253414
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.33,
+      "rules": [
+        [
+          ">",
+          253414
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "January to June 30",
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          "<=",
+          57375
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "January to June 30",
+    "rate": {
+      "rate": 0.205,
+      "rules": [
+        [
+          ">",
+          57375
+        ],
+        [
+          "<=",
+          114750
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "January to June 30",
+    "rate": {
+      "rate": 0.26,
+      "rules": [
+        [
+          ">",
+          114750
+        ],
+        [
+          "<=",
+          177882
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "January to June 30",
+    "rate": {
+      "rate": 0.29,
+      "rules": [
+        [
+          ">",
+          177882
+        ],
+        [
+          "<=",
+          253414
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2025,
+    "period": "January to June 30",
+    "rate": {
+      "rate": 0.33,
+      "rules": [
+        [
+          ">",
+          253414
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.06,
+      "rules": [
+        [
+          "<=",
+          60000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.1,
+      "rules": [
+        [
+          ">",
+          60000
+        ],
+        [
+          "<=",
+          151234
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.12,
+      "rules": [
+        [
+          ">",
+          151234
+        ],
+        [
+          "<=",
+          181481
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.13,
+      "rules": [
+        [
+          ">",
+          181481
+        ],
+        [
+          "<=",
+          241974
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          ">",
+          241974
+        ],
+        [
+          "<=",
+          362961
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "July 1 to December 31",
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          ">",
+          362961
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "January 1 to June 30",
+    "rate": {
+      "rate": 0.1,
+      "rules": [
+        [
+          "<=",
+          151234
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "January 1 to June 30",
+    "rate": {
+      "rate": 0.12,
+      "rules": [
+        [
+          ">",
+          151234
+        ],
+        [
+          "<=",
+          181481
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "January 1 to June 30",
+    "rate": {
+      "rate": 0.13,
+      "rules": [
+        [
+          ">",
+          181481
+        ],
+        [
+          "<=",
+          241974
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "January 1 to June 30",
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          ">",
+          241974
+        ],
+        [
+          "<=",
+          362961
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2025,
+    "period": "January 1 to June 30",
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          ">",
+          362961
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.0506,
+      "rules": [
+        [
+          "<=",
+          49279
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.077,
+      "rules": [
+        [
+          ">",
+          49279
+        ],
+        [
+          "<=",
+          98560
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.105,
+      "rules": [
+        [
+          ">",
+          98560
+        ],
+        [
+          "<=",
+          113158
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1229,
+      "rules": [
+        [
+          ">",
+          113158
+        ],
+        [
+          "<=",
+          137407
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.147,
+      "rules": [
+        [
+          ">",
+          137407
+        ],
+        [
+          "<=",
+          186306
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.168,
+      "rules": [
+        [
+          ">",
+          186306
+        ],
+        [
+          "<=",
+          259829
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.205,
+      "rules": [
+        [
+          ">",
+          259829
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.108,
+      "rules": [
+        [
+          "<=",
+          47564
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1275,
+      "rules": [
+        [
+          ">",
+          47564
+        ],
+        [
+          "<=",
+          100200
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.174,
+      "rules": [
+        [
+          ">",
+          100200
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.094,
+      "rules": [
+        [
+          "<=",
+          51306
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          ">",
+          51306
+        ],
+        [
+          "<=",
+          102614
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.16,
+      "rules": [
+        [
+          ">",
+          102614
+        ],
+        [
+          "<=",
+          190060
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.195,
+      "rules": [
+        [
+          ">",
+          190060
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.087,
+      "rules": [
+        [
+          "<=",
+          44192
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.145,
+      "rules": [
+        [
+          ">",
+          44192
+        ],
+        [
+          "<=",
+          88382
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.158,
+      "rules": [
+        [
+          ">",
+          88382
+        ],
+        [
+          "<=",
+          157792
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.178,
+      "rules": [
+        [
+          ">",
+          157792
+        ],
+        [
+          "<=",
+          220910
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.198,
+      "rules": [
+        [
+          ">",
+          220910
+        ],
+        [
+          "<=",
+          282214
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.208,
+      "rules": [
+        [
+          ">",
+          282214
+        ],
+        [
+          "<=",
+          564429
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.213,
+      "rules": [
+        [
+          ">",
+          564429
+        ],
+        [
+          "<=",
+          1128858
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.218,
+      "rules": [
+        [
+          ">",
+          1128858
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.059,
+      "rules": [
+        [
+          "<=",
+          51964
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.086,
+      "rules": [
+        [
+          ">",
+          51964
+        ],
+        [
+          "<=",
+          103930
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.122,
+      "rules": [
+        [
+          ">",
+          103930
+        ],
+        [
+          "<=",
+          168967
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1405,
+      "rules": [
+        [
+          ">",
+          168967
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.0879,
+      "rules": [
+        [
+          "<=",
+          30507
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1495,
+      "rules": [
+        [
+          ">",
+          30507
+        ],
+        [
+          "<=",
+          61015
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1667,
+      "rules": [
+        [
+          ">",
+          61015
+        ],
+        [
+          "<=",
+          95883
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.175,
+      "rules": [
+        [
+          ">",
+          95883
+        ],
+        [
+          "<=",
+          154650
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.21,
+      "rules": [
+        [
+          ">",
+          154650
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.04,
+      "rules": [
+        [
+          "<=",
+          54707
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.07,
+      "rules": [
+        [
+          ">",
+          54707
+        ],
+        [
+          "<=",
+          109413
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.09,
+      "rules": [
+        [
+          ">",
+          109413
+        ],
+        [
+          "<=",
+          177881
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.115,
+      "rules": [
+        [
+          ">",
+          177881
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.0505,
+      "rules": [
+        [
+          "<=",
+          52886
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.0915,
+      "rules": [
+        [
+          ">",
+          52886
+        ],
+        [
+          "<=",
+          105775
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1116,
+      "rules": [
+        [
+          ">",
+          105775
+        ],
+        [
+          "<=",
+          150000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1216,
+      "rules": [
+        [
+          ">",
+          150000
+        ],
+        [
+          "<=",
+          220000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1316,
+      "rules": [
+        [
+          ">",
+          220000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.095,
+      "rules": [
+        [
+          "<=",
+          33328
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1347,
+      "rules": [
+        [
+          ">",
+          33328
+        ],
+        [
+          "<=",
+          64656
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.166,
+      "rules": [
+        [
+          ">",
+          64656
+        ],
+        [
+          "<=",
+          105000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.1762,
+      "rules": [
+        [
+          ">",
+          105000
+        ],
+        [
+          "<=",
+          140000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.19,
+      "rules": [
+        [
+          ">",
+          140000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.105,
+      "rules": [
+        [
+          "<=",
+          53463
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.125,
+      "rules": [
+        [
+          ">",
+          53463
+        ],
+        [
+          "<=",
+          152750
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.145,
+      "rules": [
+        [
+          ">",
+          152750
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.064,
+      "rules": [
+        [
+          "<=",
+          57375
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.09,
+      "rules": [
+        [
+          ">",
+          57375
+        ],
+        [
+          "<=",
+          114750
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.109,
+      "rules": [
+        [
+          ">",
+          114750
+        ],
+        [
+          "<=",
+          177882
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.128,
+      "rules": [
+        [
+          ">",
+          177882
+        ],
+        [
+          "<=",
+          500000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2025,
+    "period": null,
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          ">",
+          500000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          "<=",
+          55867
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.205,
+      "rules": [
+        [
+          ">",
+          55867
+        ],
+        [
+          "<=",
+          111733
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.26,
+      "rules": [
+        [
+          ">",
+          111733
+        ],
+        [
+          "<=",
+          173205
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.29,
+      "rules": [
+        [
+          ">",
+          173205
+        ],
+        [
+          "<=",
+          246752
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.33,
+      "rules": [
+        [
+          ">",
+          246752
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1,
+      "rules": [
+        [
+          "<=",
+          148269
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.12,
+      "rules": [
+        [
+          ">",
+          148269
+        ],
+        [
+          "<=",
+          177922
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.13,
+      "rules": [
+        [
+          ">",
+          177922
+        ],
+        [
+          "<=",
+          237230
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          ">",
+          237230
+        ],
+        [
+          "<=",
+          355845
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          ">",
+          355845
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.0506,
+      "rules": [
+        [
+          "<=",
+          47937
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.077,
+      "rules": [
+        [
+          ">",
+          47937
+        ],
+        [
+          "<=",
+          95875
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.105,
+      "rules": [
+        [
+          ">",
+          95875
+        ],
+        [
+          "<=",
+          110076
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1229,
+      "rules": [
+        [
+          ">",
+          110076
+        ],
+        [
+          "<=",
+          133664
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.147,
+      "rules": [
+        [
+          ">",
+          133664
+        ],
+        [
+          "<=",
+          181232
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.168,
+      "rules": [
+        [
+          ">",
+          181232
+        ],
+        [
+          "<=",
+          252752
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.205,
+      "rules": [
+        [
+          ">",
+          252752
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.108,
+      "rules": [
+        [
+          "<=",
+          47000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1275,
+      "rules": [
+        [
+          ">",
+          47000
+        ],
+        [
+          "<=",
+          100000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.174,
+      "rules": [
+        [
+          ">",
+          100000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.094,
+      "rules": [
+        [
+          "<=",
+          49958
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          ">",
+          49958
+        ],
+        [
+          "<=",
+          99916
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.16,
+      "rules": [
+        [
+          ">",
+          99916
+        ],
+        [
+          "<=",
+          185064
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.195,
+      "rules": [
+        [
+          ">",
+          185064
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.087,
+      "rules": [
+        [
+          "<=",
+          43198
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.145,
+      "rules": [
+        [
+          ">",
+          43198
+        ],
+        [
+          "<=",
+          86395
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.158,
+      "rules": [
+        [
+          ">",
+          86395
+        ],
+        [
+          "<=",
+          154244
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.178,
+      "rules": [
+        [
+          ">",
+          154244
+        ],
+        [
+          "<=",
+          215943
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.198,
+      "rules": [
+        [
+          ">",
+          215943
+        ],
+        [
+          "<=",
+          275870
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.208,
+      "rules": [
+        [
+          ">",
+          275870
+        ],
+        [
+          "<=",
+          551739
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.213,
+      "rules": [
+        [
+          ">",
+          551739
+        ],
+        [
+          "<=",
+          1103478
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.218,
+      "rules": [
+        [
+          ">",
+          1103478
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.059,
+      "rules": [
+        [
+          "<=",
+          50597
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.086,
+      "rules": [
+        [
+          ">",
+          50597
+        ],
+        [
+          "<=",
+          101198
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.122,
+      "rules": [
+        [
+          ">",
+          101198
+        ],
+        [
+          "<=",
+          164525
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1405,
+      "rules": [
+        [
+          ">",
+          164525
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.0879,
+      "rules": [
+        [
+          "<=",
+          29590
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1495,
+      "rules": [
+        [
+          ">",
+          29590
+        ],
+        [
+          "<=",
+          59180
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1667,
+      "rules": [
+        [
+          ">",
+          59180
+        ],
+        [
+          "<=",
+          93000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.175,
+      "rules": [
+        [
+          ">",
+          93000
+        ],
+        [
+          "<=",
+          150000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.21,
+      "rules": [
+        [
+          ">",
+          150000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.04,
+      "rules": [
+        [
+          "<=",
+          53268
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.07,
+      "rules": [
+        [
+          ">",
+          53268
+        ],
+        [
+          "<=",
+          106537
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.09,
+      "rules": [
+        [
+          ">",
+          106537
+        ],
+        [
+          "<=",
+          173205
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.115,
+      "rules": [
+        [
+          ">",
+          173205
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.0505,
+      "rules": [
+        [
+          "<=",
+          51446
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.0915,
+      "rules": [
+        [
+          ">",
+          51446
+        ],
+        [
+          "<=",
+          102894
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1116,
+      "rules": [
+        [
+          ">",
+          102894
+        ],
+        [
+          "<=",
+          150000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1216,
+      "rules": [
+        [
+          ">",
+          150000
+        ],
+        [
+          "<=",
+          220000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1316,
+      "rules": [
+        [
+          ">",
+          220000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.0965,
+      "rules": [
+        [
+          "<=",
+          32656
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1363,
+      "rules": [
+        [
+          ">",
+          32656
+        ],
+        [
+          "<=",
+          64313
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1665,
+      "rules": [
+        [
+          ">",
+          64313
+        ],
+        [
+          "<=",
+          105000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.18,
+      "rules": [
+        [
+          ">",
+          105000
+        ],
+        [
+          "<=",
+          140000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.1875,
+      "rules": [
+        [
+          ">",
+          140000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.105,
+      "rules": [
+        [
+          "<=",
+          52057
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.125,
+      "rules": [
+        [
+          ">",
+          52057
+        ],
+        [
+          "<=",
+          148734
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.145,
+      "rules": [
+        [
+          ">",
+          148734
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.064,
+      "rules": [
+        [
+          "<=",
+          55867
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.09,
+      "rules": [
+        [
+          ">",
+          55867
+        ],
+        [
+          "<=",
+          111733
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.109,
+      "rules": [
+        [
+          ">",
+          111733
+        ],
+        [
+          "<=",
+          173205
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.128,
+      "rules": [
+        [
+          ">",
+          173205
+        ],
+        [
+          "<=",
+          500000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2024,
+    "period": null,
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          ">",
+          500000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.15,
       "rules": [
         [
           "<=",
           53359
         ]
-      ],
-      "rate": 0.064
+      ]
     }
   },
   {
-    "name": "Yukon",
+    "name": "federal",
     "year": 2023,
+    "period": null,
     "rate": {
+      "rate": 0.205,
       "rules": [
         [
           ">",
@@ -761,14 +3318,15 @@
           "<=",
           106717
         ]
-      ],
-      "rate": 0.09
+      ]
     }
   },
   {
-    "name": "Yukon",
+    "name": "federal",
     "year": 2023,
+    "period": null,
     "rate": {
+      "rate": 0.26,
       "rules": [
         [
           ">",
@@ -778,14 +3336,927 @@
           "<=",
           165430
         ]
-      ],
-      "rate": 0.109
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.29,
+      "rules": [
+        [
+          ">",
+          165430
+        ],
+        [
+          "<=",
+          235675
+        ]
+      ]
+    }
+  },
+  {
+    "name": "federal",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.33,
+      "rules": [
+        [
+          ">",
+          235675
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.1,
+      "rules": [
+        [
+          "<=",
+          142292
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.12,
+      "rules": [
+        [
+          ">",
+          142292
+        ],
+        [
+          "<=",
+          170751
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.13,
+      "rules": [
+        [
+          ">",
+          170751
+        ],
+        [
+          "<=",
+          227668
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          ">",
+          227668
+        ],
+        [
+          "<=",
+          341502
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Alberta",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.15,
+      "rules": [
+        [
+          ">",
+          341502
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.0506,
+      "rules": [
+        [
+          "<=",
+          45654
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.077,
+      "rules": [
+        [
+          ">",
+          45654
+        ],
+        [
+          "<=",
+          91310
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.105,
+      "rules": [
+        [
+          ">",
+          91310
+        ],
+        [
+          "<=",
+          104835
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.1229,
+      "rules": [
+        [
+          ">",
+          104835
+        ],
+        [
+          "<=",
+          127299
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.147,
+      "rules": [
+        [
+          ">",
+          127299
+        ],
+        [
+          "<=",
+          172602
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.168,
+      "rules": [
+        [
+          ">",
+          172602
+        ],
+        [
+          "<=",
+          240716
+        ]
+      ]
+    }
+  },
+  {
+    "name": "British Columbia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.205,
+      "rules": [
+        [
+          ">",
+          240716
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.108,
+      "rules": [
+        [
+          "<=",
+          36842
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.1275,
+      "rules": [
+        [
+          ">",
+          36842
+        ],
+        [
+          "<=",
+          79625
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Manitoba",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.174,
+      "rules": [
+        [
+          ">",
+          79625
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.094,
+      "rules": [
+        [
+          "<=",
+          47715
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.14,
+      "rules": [
+        [
+          ">",
+          47715
+        ],
+        [
+          "<=",
+          95431
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.16,
+      "rules": [
+        [
+          ">",
+          95431
+        ],
+        [
+          "<=",
+          176756
+        ]
+      ]
+    }
+  },
+  {
+    "name": "New Brunswick",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.195,
+      "rules": [
+        [
+          ">",
+          176756
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.087,
+      "rules": [
+        [
+          "<=",
+          41457
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.145,
+      "rules": [
+        [
+          ">",
+          41457
+        ],
+        [
+          "<=",
+          82913
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.158,
+      "rules": [
+        [
+          ">",
+          82913
+        ],
+        [
+          "<=",
+          148027
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.178,
+      "rules": [
+        [
+          ">",
+          148027
+        ],
+        [
+          "<=",
+          207239
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.198,
+      "rules": [
+        [
+          ">",
+          207239
+        ],
+        [
+          "<=",
+          264750
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.208,
+      "rules": [
+        [
+          ">",
+          264750
+        ],
+        [
+          "<=",
+          529500
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.213,
+      "rules": [
+        [
+          ">",
+          529500
+        ],
+        [
+          "<=",
+          1059000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Newfoundland and Labrador",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.218,
+      "rules": [
+        [
+          ">",
+          1059000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.059,
+      "rules": [
+        [
+          "<=",
+          48326
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.086,
+      "rules": [
+        [
+          ">",
+          48326
+        ],
+        [
+          "<=",
+          96655
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.122,
+      "rules": [
+        [
+          ">",
+          96655
+        ],
+        [
+          "<=",
+          157139
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Northwest Territories",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.1405,
+      "rules": [
+        [
+          ">",
+          157139
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.0879,
+      "rules": [
+        [
+          "<=",
+          29590
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.1495,
+      "rules": [
+        [
+          ">",
+          29590
+        ],
+        [
+          "<=",
+          59180
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.1667,
+      "rules": [
+        [
+          ">",
+          59180
+        ],
+        [
+          "<=",
+          93000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.175,
+      "rules": [
+        [
+          ">",
+          93000
+        ],
+        [
+          "<=",
+          150000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nova Scotia",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.21,
+      "rules": [
+        [
+          ">",
+          150000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.04,
+      "rules": [
+        [
+          "<=",
+          50877
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.07,
+      "rules": [
+        [
+          ">",
+          50877
+        ],
+        [
+          "<=",
+          101754
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.09,
+      "rules": [
+        [
+          ">",
+          101754
+        ],
+        [
+          "<=",
+          165429
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Nunavut",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.115,
+      "rules": [
+        [
+          ">",
+          165429
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.0505,
+      "rules": [
+        [
+          "<=",
+          49231
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.0915,
+      "rules": [
+        [
+          ">",
+          49231
+        ],
+        [
+          "<=",
+          98463
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.1116,
+      "rules": [
+        [
+          ">",
+          98463
+        ],
+        [
+          "<=",
+          150000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.1216,
+      "rules": [
+        [
+          ">",
+          150000
+        ],
+        [
+          "<=",
+          220000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Ontario",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.1316,
+      "rules": [
+        [
+          ">",
+          220000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.098,
+      "rules": [
+        [
+          "<=",
+          31984
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.138,
+      "rules": [
+        [
+          ">",
+          31984
+        ],
+        [
+          "<=",
+          63969
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Prince Edward Island",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.167,
+      "rules": [
+        [
+          ">",
+          63969
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.105,
+      "rules": [
+        [
+          "<=",
+          4972000
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.125,
+      "rules": [
+        [
+          ">",
+          49720
+        ],
+        [
+          "<=",
+          142058
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Saskatchewan",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.145,
+      "rules": [
+        [
+          ">",
+          142058
+        ]
+      ]
     }
   },
   {
     "name": "Yukon",
     "year": 2023,
+    "period": null,
     "rate": {
+      "rate": 0.064,
+      "rules": [
+        [
+          "<=",
+          53359
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.09,
+      "rules": [
+        [
+          ">",
+          53359
+        ],
+        [
+          "<=",
+          106717
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.109,
+      "rules": [
+        [
+          ">",
+          106717
+        ],
+        [
+          "<=",
+          165430
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Yukon",
+    "year": 2023,
+    "period": null,
+    "rate": {
+      "rate": 0.128,
       "rules": [
         [
           ">",
@@ -795,141 +4266,21 @@
           "<=",
           500000
         ]
-      ],
-      "rate": 0.128
+      ]
     }
   },
   {
     "name": "Yukon",
     "year": 2023,
+    "period": null,
     "rate": {
+      "rate": 0.15,
       "rules": [
         [
           ">",
           500000
         ]
-      ],
-      "rate": 0.15
-    }
-  },
-  {
-    "name": "Northwest Territories",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          "<=",
-          48326
-        ]
-      ],
-      "rate": 0.059000000000000004
-    }
-  },
-  {
-    "name": "Northwest Territories",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          48326
-        ],
-        [
-          "<=",
-          96655
-        ]
-      ],
-      "rate": 0.086
-    }
-  },
-  {
-    "name": "Northwest Territories",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          96655
-        ],
-        [
-          "<=",
-          157139
-        ]
-      ],
-      "rate": 0.122
-    }
-  },
-  {
-    "name": "Northwest Territories",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          157139
-        ]
-      ],
-      "rate": 0.1405
-    }
-  },
-  {
-    "name": "Nunavut",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          "<=",
-          50877
-        ]
-      ],
-      "rate": 0.04
-    }
-  },
-  {
-    "name": "Nunavut",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          50877
-        ],
-        [
-          "<=",
-          101754
-        ]
-      ],
-      "rate": 0.07
-    }
-  },
-  {
-    "name": "Nunavut",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          101754
-        ],
-        [
-          "<=",
-          165429
-        ]
-      ],
-      "rate": 0.09
-    }
-  },
-  {
-    "name": "Nunavut",
-    "year": 2023,
-    "rate": {
-      "rules": [
-        [
-          ">",
-          165429
-        ]
-      ],
-      "rate": 0.115
+      ]
     }
   },
   {
