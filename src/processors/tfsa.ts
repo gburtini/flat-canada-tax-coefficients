@@ -1,4 +1,4 @@
-import * as cheerio from "npm:cheerio@1.0.0-rc.12";
+import * as cheerio from "cheerio";
 import { cleanCell } from "../lib/cleaners.ts";
 import { defaultCleaner, runner } from "../lib/runner.ts";
 

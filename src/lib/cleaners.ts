@@ -1,11 +1,20 @@
-import type { AnyNode, Cheerio } from "npm:cheerio@1.0.0-rc.12";
+import type { AnyNode, Cheerio } from "cheerio";
 import { DataRow } from "./combiners.ts";
 
 type TaxRule = [string, number];
 
 export function cleanNumber(s: string) {
   const multiplier = s.trim().endsWith("%") ? 1 / 100 : 1;
-  const normalized = s.replace(/[$,%]/g, "").replace(/\s+/g, " ").trim();
+  // Some CRA tables use a final comma before the two decimal places,
+  // e.g. Saskatchewan's 2023 upper bound "49,720,00".
+  const money = s.trim();
+  const decimalNormalized = /^\$?\d{1,3}(?:,\d{3})+,\d{2}$/.test(money)
+    ? money.replace(/,(\d{2})$/, ".$1")
+    : money;
+  const normalized = decimalNormalized.replace(/[$,%]/g, "").replace(
+    /\s+/g,
+    " ",
+  ).trim();
   const numericPart = normalized.match(/-?(?:\d[\d,]*(?:\.\d+)?|\.\d+)/);
   return (numericPart ? parseFloat(numericPart[0].replace(/,/g, "")) : NaN) *
     multiplier;
@@ -42,7 +51,7 @@ export function cleanRawData(
     for (const [k, v] of Object.entries(row)) {
       // rename all fields per the FIELD_MAP
       const newKey = fieldMap[k] ?? k;
-      let newValue: number | string = v;
+      let newValue: number | string | null = v;
 
       // TODO: because of the floating point error introduced here, we could imagine
       // an end user preferring the raw string values. Return these as well.
@@ -53,10 +62,18 @@ export function cleanRawData(
         // strip dollar signs, commas
         // NOTE: stripping % here probably indicates a bug unless we have handled
         // the percentage in the convert percentages rules below this.
-        newValue = cleanNumber(newValue);
+        if (
+          /^(?:n\/?a|not applicable|\(Old limits\)|[-–—])?$/i.test(
+            newValue.trim(),
+          )
+        ) {
+          newValue = null;
+        } else {
+          newValue = cleanNumber(newValue);
+        }
 
         // convert percentages to their raw values
-        if (newKey in fieldMultipliers) {
+        if (newValue !== null && newKey in fieldMultipliers) {
           newValue = newValue * fieldMultipliers[newKey];
         }
       }

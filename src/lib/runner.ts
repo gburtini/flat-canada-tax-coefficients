@@ -1,7 +1,8 @@
-import * as cheerio from "npm:cheerio@1.0.0-rc.12";
-import type { AnyNode, Cheerio } from "npm:cheerio@1.0.0-rc.12";
+import * as cheerio from "cheerio";
+import type { AnyNode, Cheerio } from "cheerio";
 import { cleanCell, cleanHeader, cleanRawData } from "./cleaners.ts";
 import { DataRow, ensureExtend } from "./combiners.ts";
+import { assertJsonNumbers, validateDataset } from "./validation.ts";
 
 type TableRow = Record<string, string>;
 type RunnerOptions = {
@@ -43,6 +44,7 @@ export async function runner<RawRow extends DataRow>(
 
     // cleanup raw data.
     const data = cleaner ? await cleaner(rawData) : rawData;
+    validateDataset(outputFilename, data);
     if (cleaner) {
       console.log("Successfully cleaned data into", data.length, "rows.");
     } else console.log("No cleaning requested.");
@@ -50,6 +52,17 @@ export async function runner<RawRow extends DataRow>(
     // do whatever combination rules are necessary with the existing data
     const path = "./data/" + outputFilename;
     const existingData = await readJSON(path);
+    if (data.some((row) => typeof row.year === "number")) {
+      const latestYear = (rows: readonly DataRow[]): number =>
+        Math.max(
+          ...rows.map((row) => typeof row.year === "number" ? row.year : 0),
+        );
+      if (latestYear(data) < latestYear(existingData)) {
+        throw new Error(
+          `Refresh would roll ${outputFilename} back to an older year.`,
+        );
+      }
+    }
     console.log("Found existing data", existingData.length, "rows.");
 
     // TODO: this should probably be an optional argument (combiner) as well.
@@ -84,6 +97,7 @@ export async function writeJSON(
   _replacer: null = null,
   space = 2,
 ): Promise<void> {
+  assertJsonNumbers(data, path);
   await Deno.writeTextFile(path, `${JSON.stringify(data, _replacer, space)}\n`);
 }
 
