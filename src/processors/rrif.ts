@@ -15,4 +15,5 @@ await runner(
   Deno.args[0],
   defaultProcessor(selector),
   defaultCleaner(FIELD_MAP, FIELD_MULTIPLIERS),
+  { removeFile: false, identityKeys: ["age"] },
 );

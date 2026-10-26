@@ -1,6 +1,7 @@
-import * as cheerio from "npm:cheerio@1.0.0-rc.12";
+import * as cheerio from "cheerio";
 import { cleanCell, cleanNumber } from "../lib/cleaners.ts";
 import { readJSON, writeJSON } from "../lib/runner.ts";
+import { validateDataset } from "../lib/validation.ts";
 
 type Cpp2Row = {
   year: number;
@@ -12,7 +13,13 @@ type Cpp2Row = {
 
 const html = await Deno.readTextFile(Deno.args[0]);
 const cpp2Rows = await extractCpp2Rows(html);
+validateDataset("cpp2.json", cpp2Rows);
 const existingRows = await readJSON("./data/cpp.json");
+for (const row of cpp2Rows) {
+  if (!existingRows.some((existing) => existing.year === row.year)) {
+    throw new Error(`CPP2 year ${row.year} has no matching base CPP row.`);
+  }
+}
 
 const mergedRows = existingRows.map((row) => {
   const year = row.year;
@@ -38,7 +45,7 @@ async function extractCpp2Rows(html: string): Promise<Cpp2Row[]> {
       return;
     }
     if (cells.length !== 5) {
-      return;
+      throw new Error(`CPP2 row has ${cells.length} cells instead of five.`);
     }
 
     return {

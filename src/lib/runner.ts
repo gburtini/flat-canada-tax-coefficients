@@ -1,11 +1,14 @@
-import * as cheerio from "npm:cheerio@1.0.0-rc.12";
-import type { AnyNode, Cheerio } from "npm:cheerio@1.0.0-rc.12";
+import * as cheerio from "cheerio";
+import type { Cheerio } from "cheerio";
+import type { AnyNode } from "domhandler";
 import { cleanCell, cleanHeader, cleanRawData } from "./cleaners.ts";
 import { DataRow, ensureExtend } from "./combiners.ts";
+import { assertJsonNumbers, validateDataset } from "./validation.ts";
 
 type TableRow = Record<string, string>;
 type RunnerOptions = {
   removeFile: boolean;
+  identityKeys?: readonly string[];
 };
 type ProcessTableArgs = [
   keys?: string[] | null,
@@ -18,8 +21,8 @@ type ProcessTableArgs = [
 // T is usually {[key:string]: string}
 export async function runner<RawRow extends DataRow>(
   dataFile: string,
-  processor: (html: string) => Promise<RawRow[]>, // TODO: processor would be clearer as "extractor"; processors are the whole end-to-end execution.
-  cleaner: ((data: RawRow[]) => Promise<DataRow[]>) | null,
+  processor: (html: string) => RawRow[] | Promise<RawRow[]>,
+  cleaner: ((data: RawRow[]) => DataRow[] | Promise<DataRow[]>) | null,
   options: RunnerOptions = {
     removeFile: false,
   },
@@ -42,6 +45,7 @@ export async function runner<RawRow extends DataRow>(
 
     // cleanup raw data.
     const data = cleaner ? await cleaner(rawData) : rawData;
+    validateDataset(outputFilename, data);
     if (cleaner) {
       console.log("Successfully cleaned data into", data.length, "rows.");
     } else console.log("No cleaning requested.");
@@ -49,10 +53,21 @@ export async function runner<RawRow extends DataRow>(
     // do whatever combination rules are necessary with the existing data
     const path = "./data/" + outputFilename;
     const existingData = await readJSON(path);
+    if (data.some((row) => typeof row.year === "number")) {
+      const latestYear = (rows: readonly DataRow[]): number =>
+        Math.max(
+          ...rows.map((row) => typeof row.year === "number" ? row.year : 0),
+        );
+      if (latestYear(data) < latestYear(existingData)) {
+        throw new Error(
+          `Refresh would roll ${outputFilename} back to an older year.`,
+        );
+      }
+    }
     console.log("Found existing data", existingData.length, "rows.");
 
     // TODO: this should probably be an optional argument (combiner) as well.
-    const combinedData = ensureExtend(data, existingData);
+    const combinedData = ensureExtend(data, existingData, options.identityKeys);
     console.log("Applied combiner and got", combinedData.length, "rows.");
 
     //
@@ -83,6 +98,7 @@ export async function writeJSON(
   _replacer: null = null,
   space = 2,
 ): Promise<void> {
+  assertJsonNumbers(data, path);
   await Deno.writeTextFile(path, `${JSON.stringify(data, _replacer, space)}\n`);
 }
 
@@ -107,7 +123,7 @@ export function defaultCleaner(
   fieldMap: { [key: string]: string } = {},
   fieldMultipliers: { [key: string]: number } = {},
 ) {
-  return async (rawData: TableRow[]) => {
+  return (rawData: TableRow[]) => {
     return cleanRawData(rawData, fieldMap, fieldMultipliers);
   };
 }
