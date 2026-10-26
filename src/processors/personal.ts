@@ -26,7 +26,7 @@ await runner(
       const yearMatch = caption.match(/\b(20\d{2})\b/);
       if (!yearMatch) return;
 
-      const parsedCaption = parseCaption(caption, parseInt(yearMatch[1]));
+      const parsedCaption = parseCaption(caption);
       if (!parsedCaption) return;
 
       $(table).find("tr").each((_, row) => {
@@ -62,11 +62,11 @@ await runner(
     return structure;
   },
   null,
+  { removeFile: false, identityKeys: ["name", "year", "period"] },
 );
 
 function parseCaption(
   caption: string,
-  year: number,
 ): { name: string; year: number; period: string | null } | null {
   const suffix = " tax rates and income thresholds";
   const prefix = caption.slice(0, caption.indexOf(suffix)).trim();

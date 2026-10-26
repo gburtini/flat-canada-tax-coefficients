@@ -19,7 +19,7 @@ const selector = `table:has(caption:contains('${TABLE_HEADER}'))`;
 await runner(
   Deno.args[0],
   defaultProcessor(selector),
-  async (rawData: Record<string, string>[]) =>
+  (rawData: Record<string, string>[]) =>
     cleanRawData(rawData, FIELD_MAP, FIELD_MULTIPLIERS).filter((row) =>
       isCompletePensionRow(row)
     ),

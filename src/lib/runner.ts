@@ -6,6 +6,7 @@ import { DataRow, ensureExtend } from "./combiners.ts";
 type TableRow = Record<string, string>;
 type RunnerOptions = {
   removeFile: boolean;
+  identityKeys?: readonly string[];
 };
 type ProcessTableArgs = [
   keys?: string[] | null,
@@ -18,8 +19,8 @@ type ProcessTableArgs = [
 // T is usually {[key:string]: string}
 export async function runner<RawRow extends DataRow>(
   dataFile: string,
-  processor: (html: string) => Promise<RawRow[]>, // TODO: processor would be clearer as "extractor"; processors are the whole end-to-end execution.
-  cleaner: ((data: RawRow[]) => Promise<DataRow[]>) | null,
+  processor: (html: string) => RawRow[] | Promise<RawRow[]>,
+  cleaner: ((data: RawRow[]) => DataRow[] | Promise<DataRow[]>) | null,
   options: RunnerOptions = {
     removeFile: false,
   },
@@ -52,7 +53,7 @@ export async function runner<RawRow extends DataRow>(
     console.log("Found existing data", existingData.length, "rows.");
 
     // TODO: this should probably be an optional argument (combiner) as well.
-    const combinedData = ensureExtend(data, existingData);
+    const combinedData = ensureExtend(data, existingData, options.identityKeys);
     console.log("Applied combiner and got", combinedData.length, "rows.");
 
     //
@@ -107,7 +108,7 @@ export function defaultCleaner(
   fieldMap: { [key: string]: string } = {},
   fieldMultipliers: { [key: string]: number } = {},
 ) {
-  return async (rawData: TableRow[]) => {
+  return (rawData: TableRow[]) => {
     return cleanRawData(rawData, fieldMap, fieldMultipliers);
   };
 }

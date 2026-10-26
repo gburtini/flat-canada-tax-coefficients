@@ -140,7 +140,7 @@ export function cleanTaxRateString(str: string): {
 
     console.log(
       cleanTaxRateString(
-        "20.3% on the portion of your taxable income that is more than $166,280"
+        "20.3% on the portion of your taxable income that is more than $166,280"
       )
     );
 

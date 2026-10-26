@@ -11,7 +11,7 @@ const FIELD_MAP: { [key: string]: string } = {
 
 await runner(
   Deno.args[0],
-  async (html: string) => {
+  (html: string) => {
     const $ = cheerio.load(html);
     const table = $("table").filter((_, element) =>
       cleanCell($(element).find("caption").first()).includes(TABLE_HEADER)
