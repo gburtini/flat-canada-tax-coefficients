@@ -1,4 +1,5 @@
-import type { AnyNode, Cheerio } from "cheerio";
+import type { Cheerio } from "cheerio";
+import type { AnyNode } from "domhandler";
 import { DataRow } from "./combiners.ts";
 
 type TaxRule = [string, number];

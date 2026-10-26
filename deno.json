@@ -7,6 +7,7 @@
     "verify": "deno task check && deno task lint && deno task fmt && deno task test"
   },
   "imports": {
-    "cheerio": "npm:cheerio@1.0.0-rc.12"
+    "cheerio": "npm:cheerio@1.2.0",
+    "domhandler": "npm:domhandler@5.0.3"
   }
 }

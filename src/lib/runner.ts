@@ -1,5 +1,6 @@
 import * as cheerio from "cheerio";
-import type { AnyNode, Cheerio } from "cheerio";
+import type { Cheerio } from "cheerio";
+import type { AnyNode } from "domhandler";
 import { cleanCell, cleanHeader, cleanRawData } from "./cleaners.ts";
 import { DataRow, ensureExtend } from "./combiners.ts";
 import { assertJsonNumbers, validateDataset } from "./validation.ts";
