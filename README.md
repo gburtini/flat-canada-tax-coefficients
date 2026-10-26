@@ -13,6 +13,31 @@ computations. Updated (at least) once a quarter.
 | TFSA limits (starting in 2009)                         | [JSON](data/tfsa.json)     | [tfsa.ts](src/processors/tfsa.ts)                                  | [1](https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html)                                                                                                                                                                                                                                                 |
 | Personal tax rates, federal and provincial (no Quebec) | [JSON](data/personal.json) | [personal.ts](src/processors/personal.ts)                          | [1](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/income-tax/reducing-remuneration-subject-income-tax.html)                                                                                                                                                                                                     |
 
+## Development and data validation
+
+Use Deno 2.9.4 and run `deno task --frozen verify` for type checks, lint,
+formatting, merge/validation tests, and a replay of all six retained CRA source
+pages. Dependencies are pinned in `deno.json` and `deno.lock`. The fixture replay
+runs in a temporary directory and verifies that the source pages reproduce the
+committed JSON without modifying the working tree.
+
+Refreshes reject empty tables, non-finite values, missing required fields,
+duplicate years or ages, missing historical years, incomplete RRIF tables,
+and overlapping or incomplete personal-tax schedules. Explicit source markers
+such as `n/a` remain null for optional fields. A formatting exception for CRA's
+`49,720,00` value preserves its two decimal places.
+
+Merge identities are year for annual coefficients, age for RRIF, and
+jurisdiction/year/period for personal-tax schedules. Replacing a personal-tax
+schedule replaces all its brackets together. Base CPP refreshes retain CPP2
+fields contributed by the separate source. Historical groups remain available
+when a current source no longer publishes them.
+
+Pull requests run read-only checks. The scheduled/manual data workflow runs the
+same checks before and after fetching, and only commits when both passes
+succeed. Processor changes no longer trigger a write-enabled data refresh on
+their branches.
+
 ## Sources
 
 ### Current

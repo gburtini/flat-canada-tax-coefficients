@@ -15,11 +15,16 @@ runs:
   steps:
     - name: Download source
       shell: bash
+      env:
+        SOURCE_URL: ${{ inputs.url }}
+        OUTPUT_PATH: ${{ inputs.output }}
       run: |
-        mkdir -p "$(dirname "${{ inputs.output }}")"
+        mkdir -p "$(dirname "$OUTPUT_PATH")"
         curl --fail --location --silent --show-error --retry 3 \
-          --output "${{ inputs.output }}" \
-          "${{ inputs.url }}"
+          --max-time 120 --output "$OUTPUT_PATH" "$SOURCE_URL"
     - name: Process source
       shell: bash
-      run: deno run --allow-read --allow-write "${{ inputs.processor }}" "${{ inputs.output }}"
+      env:
+        PROCESSOR_PATH: ${{ inputs.processor }}
+        OUTPUT_PATH: ${{ inputs.output }}
+      run: deno run --frozen --allow-read --allow-write "$PROCESSOR_PATH" "$OUTPUT_PATH"
