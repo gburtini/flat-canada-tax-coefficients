@@ -19,3 +19,4 @@ jobs:
         with:
           deno-version: v2.9.4
       - run: deno task --frozen verify
+      - run: git diff --exit-code

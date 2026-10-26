@@ -1,9 +1,9 @@
 {
   "tasks": {
-    "check": "deno check src/processors/*.ts src/*_test.ts src/lib/*_test.ts",
+    "check": "deno check --frozen src/processors/*.ts src/*_test.ts src/lib/*_test.ts",
     "lint": "deno lint src",
     "fmt": "deno fmt --check src deno.json",
-    "test": "deno test --allow-read --allow-write --allow-run src",
+    "test": "deno test --frozen --allow-read --allow-write --allow-run src",
     "verify": "deno task check && deno task lint && deno task fmt && deno task test"
   },
   "imports": {

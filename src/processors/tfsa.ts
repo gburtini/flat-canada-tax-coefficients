@@ -15,7 +15,7 @@ await runner(
     const $ = cheerio.load(html);
     const table = $("table").filter((_, element) =>
       cleanCell($(element).find("caption").first()).includes(TABLE_HEADER)
-    ).first();
+    );
 
     if (table.length !== 1) {
       throw new Error(`Expected one TFSA table, found ${table.length}.`);

@@ -19,6 +19,7 @@ Deno.test("all retained CRA snapshots reproduce the committed coefficients", asy
       const command = new Deno.Command(Deno.execPath(), {
         args: [
           "run",
+          "--frozen",
           "--config",
           fileURLToPath(new URL("deno.json", root)),
           "--allow-read",
@@ -46,6 +47,29 @@ Deno.test("all retained CRA snapshots reproduce the committed coefficients", asy
         `${dataset} changed after replaying its snapshot`,
       );
     }
+    const tfsaBefore = await Deno.readTextFile(`${directory}/data/tfsa.json`);
+    const source = await Deno.readTextFile(new URL("raw/tfsa.html", root));
+    await Deno.writeTextFile(`${directory}/duplicate.html`, source + source);
+    const invalid = await new Deno.Command(Deno.execPath(), {
+      args: [
+        "run",
+        "--frozen",
+        "--config",
+        fileURLToPath(new URL("deno.json", root)),
+        "--allow-read",
+        "--allow-write",
+        fileURLToPath(new URL("src/processors/tfsa.ts", root)),
+        `${directory}/duplicate.html`,
+      ],
+      cwd: directory,
+      stdout: "piped",
+      stderr: "piped",
+    }).output();
+    assert.notEqual(invalid.code, 0, "Duplicate TFSA tables must fail closed.");
+    assert.equal(
+      await Deno.readTextFile(`${directory}/data/tfsa.json`),
+      tfsaBefore,
+    );
   } finally {
     await Deno.remove(directory, { recursive: true });
   }
